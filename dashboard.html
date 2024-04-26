@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Dashboard for MindWhisper - Your platform for mental health support. Explore tools and resources tailored to support mental well-being.">
+		<meta name="tags" content="dashboard, MindWhisper, mental health, support, tools, resources">
+		<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+		<link rel="icon" href="assets/images/favicon_io/favicon.ico" type="image/x-icon">
+		<title>Dashboard</title>
+	</head>
+
+	<body>
+		
+		<aside id="sidebar">
+			<a href="#" class="brand">
+				<img src="assets/images/logo.svg" id="logo" alt="Logo">
+			</a>
+			<div class="profile-info">
+				<label for="profile-picture-input" class="profile-picture">
+					<img src="assets/images/dashboard/default-profile-photo.jpg" style="width: 10%; max-height: 120px; height: auto; border-radius: 50%;" alt="Profile Picture" id="current-profile-pic">
+					<input type="file" id="profile-picture-input" accept="image/*" style="display: none;">
+				</label>
+				<div class="profile-details">
+					<h1 class="username">Lua Guang</h1>
+					<p class="email">luaguang13@serv.com</p>
+				</div>
+			</div>
+			<ul class="side-menu">
+				<li>
+					<a href="#">
+						<i class='bx bxs-cog'></i>
+						<span class="text">Settings</span>
+					</a>
+				</li>
+				<li>
+					<a href="index.html" class="logout">
+						<i class='bx bxs-log-out-circle'></i>
+						<span class="text">Logout</span>
+					</a>
+				</li>
+			</ul>
+		</aside>
+		
+
+		<section id="content">
+			<nav>
+				<form action="#">
+					<div class="form-input">
+						<input type="search" placeholder="Search...">
+						<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+					</div>
+				</form>
+			</nav>
+
+			<main>
+				<header class="head-title">
+					<div class="left">
+						<h1>Dashboard</h1>
+						<ul class="breadcrumb">
+							<li>
+								<a href="#">Dashboard</a>
+							</li>
+						</ul>
+					</div>
+				</header>
+
+				<div class="welcome-message">
+					<h2>Welcome, User!</h2>
+					<p>Explore our dashboard packed with tools and resources tailored to support your mental well-being. Dive in and discover a range of services, all available for you to try out, completely free of charge. Your journey to better mental health starts here!</p>
+				</div>
+
+				<div class="services">
+					<div class="service-card">
+						<a href="supportcare-directory.html">
+							<img src="assets/images/dashboard/mental-health (1).png" alt="SupportCare Directory" style="width: 12%; max-height: 140px; height: auto;">
+							<h3>SupportCare Directory</h3>
+						</a>
+					</div>
+					<div class="service-card">
+						<a href="mental-health-assessment.html">
+							<img src="assets/images/dashboard/online-survey.png" alt="Mental Health Test" style="width: 12%; max-height: 140px; height: auto;">
+							<h3>Mental Health Test</h3>
+						</a>
+					</div>
+					<div class="service-card">
+						<a href="resource-library.html">
+							<img src="assets/images/dashboard/book.png" alt="Resource Library" style="width: 12%; max-height: 140px; height: auto;">
+							<h3>Resource Library</h3>
+						</a>
+					</div>
+					<div class="service-card">
+						<a href="suicide-&-crisis-hotline.html">
+							<img src="assets/images/dashboard/24-hours-support.png" alt="Suicide & Crisis Hotlines" style="width: 12%; max-height: 140px; height: auto;">
+							<h3>Suicide & Crisis Hotlines</h3>
+						</a>
+					</div>
+					<div class="service-card">
+						<a href="therapeutic-tools-and-apps.html">
+							<img src="assets/images/dashboard/smartphone (1).png" alt="Therapeutic Tools and Apps" style="width: 12%; max-height: 140px; height: auto;">
+							<h3>Therapeutic Tools and Apps</h3>
+						</a>
+					</div>
+					<div class="service-card">
+						<a href="feedback-and-suggestions.html">
+							<img src="assets/images/dashboard/customer-rating.png" alt="Feedback and Suggestion" style="width: 12%; max-height: 140px; height: auto;">
+							<h3>Feedback and Suggestion</h3>
+						</a>
+					</div>
+				</div>
+		
+			</main>
+		</section>
+		
+	</body>
+</html>

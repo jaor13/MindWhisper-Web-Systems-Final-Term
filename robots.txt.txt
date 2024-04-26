@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /dashboard.html
+Disallow: /login-signup.html
+Disallow: /feedback-and-suggestions.html
+
+Allow: /$
