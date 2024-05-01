@@ -115,10 +115,9 @@ header .btn {
 }
 
 .image{
-    width: 200%;
-    height: auto; 
-    object-fit: cover; /* Ensure the image covers the entire container without stretching */
-    position: center;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover; 
 }
 
 
