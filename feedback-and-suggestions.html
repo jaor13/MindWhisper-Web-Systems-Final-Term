@@ -40,9 +40,34 @@
             </div>
             <h3>We Would Be Glad To Know Your Impression!<h3>
             
-            <textarea rows="4"></textarea>
-            <button type="submit" href="/">Submit</button>
-        </form>
-    </div>
-</body>
-</html>
+                <textarea id="impression" rows="4"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    
+        <!-- Modal -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Thank you for your feedback!</p>
+            </div>
+        </div>
+    
+        <script>
+            // JavaScript to handle the modal
+            document.getElementById("feedbackForm").addEventListener("submit", function(event){
+                event.preventDefault(); // Prevents default form submission behavior
+    
+                // Display modal
+                var modal = document.getElementById("modal");
+                modal.style.display = "block";
+    
+                // Close modal when close button is clicked
+                var closeButton = document.getElementsByClassName("close")[0];
+                closeButton.onclick = function() {
+                    modal.style.display = "none";
+                }
+            });
+        </script>
+    </body>
+    </html>
