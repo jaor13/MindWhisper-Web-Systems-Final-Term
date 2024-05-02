@@ -122,15 +122,14 @@ header .btn {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cc1b2429', endColorstr='#cc1b2429', GradientType=0);
 }
 
-.slider-img img {
-  width: 50%;
-  height: auto;
-  z-index: -1;
-  object-fit: cover;
-  position: relative;
-  margin-top: -1.5%;
-  margin-left: 25%;
-}
+  .slider-img img {
+    position: relative;
+    width: 50%;
+    height: auto;
+    z-index: -1;
+    object-fit: cover;
+  }
+
 
 #main-header header{
     background-color: #f8f9fa; 
