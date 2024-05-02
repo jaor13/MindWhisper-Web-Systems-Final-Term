@@ -114,47 +114,45 @@ header .btn {
     background-color: #e63e00;
 }
 
-/*.image{
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover; 
-}*/
-
 .slider-img {
+  position: relative;
   background: -moz-linear-gradient(top, rgba(45, 32, 44, 0.5) 0%, rgba(45, 32, 44, 0.5) 100%);
   background: -webkit-linear-gradient(top, rgba(45, 32, 44, 0.5) 0%, rgba(45, 32, 44, 0.5) 100%);
-  background: linear-gradient(to bottom, rgba(45, 32, 44, 0.5) 0%, rgba(45, 32, 44, 0.5) 100%);
+  background: linear-gradient(to bottom, rgba(45, 32, 44, 0.5) 0%, rgba(36, 23, 35, 0.5) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cc1b2429', endColorstr='#cc1b2429', GradientType=0);
-  position: relative;
-  width: auto;
-  height: 100vh; /* Change this line */
 }
 
 .slider-img img {
+  width: 50%;
+  height: auto;
+  z-index: -1;
+  object-fit: cover;
   position: relative;
-  width: 100%;
-  height: 100vh; /* Make the image cover the entire container height */
+  margin-top: -1.5%;
+  margin-left: 25%;
 }
-
-.item {
-  position: relative;
-  
-}
-
-
 
 #main-header header{
     background-color: #f8f9fa; 
     padding: 20px;
-    padding-top: 150px; 
+    padding-top: 30px; 
     text-align: center; 
-    
+    margin-top: 45%;
 }
 
 .header-h1 {
     color: #333; 
     font-weight: bolder;
     margin-top: auto;
+}
+
+.header-h2 {
+  font-size: 1.2rem; 
+  font-weight: 600; 
+  line-height: 1.5; 
+  margin-top: 20px;
+  color: #333;
+  text-align: center;
 }
 
 .breadcrumb {
@@ -171,35 +169,32 @@ header .btn {
 
 .breadcrumb li i {
     margin: 0 5px;
-    color: #aaa; /* Color for the separator icon */
+    color: #aaa; 
 }
 
 .breadcrumb li a {
     color: #007bff;
     text-decoration: none;
-    font-weight: bold; /* Make links bold */
-    transition: color 0.3s; /* Smooth transition for color change */
+    font-weight: bold; 
+    transition: color 0.3s;
 }
 
 .breadcrumb li a:hover {
-    color: #0056b3; /* Color change on hover */
+    color: #0056b3; 
 }
 
 .breadcrumb li:last-child a {
-    pointer-events: none; /* Disable pointer events on the last item */
-    color: #333; /* Color for the active/last item */
+    pointer-events: none; 
+    color: #333; 
 }
 
 .breadcrumb li:last-child i {
-    display: none; /* Hide separator icon on the last item */
+    display: none; 
 }
 
-#main-header h2 {
-    font-size: 1.25rem; /* Adjust the font size as needed */
-    font-weight: 300; /* Optionally adjust the font weight */
-    line-height: 1.5; /* Optionally adjust the line height */
-    margin-top: 20px; /* Add some top margin for spacing */
-    color: #333; /* Optionally adjust the text color */
+p{
+  text-align: justify;
+  font-size: 15px;
 }
   
 .footer {
@@ -208,7 +203,7 @@ header .btn {
   padding-bottom: 0px;
   background-color: #444;
   color: #FFF; 
-  margin-top: 1000px;
+  margin-top: 100px;
 }
 
 @media screen and (max-width: 940px) {
