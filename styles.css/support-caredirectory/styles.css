@@ -124,12 +124,24 @@ header .btn {
 
   .slider-img img {
     position: relative;
-    width: 50%;
+    width: 100%;
     height: auto;
     z-index: -1;
     object-fit: cover;
   }
 
+  @media screen and (max-width: 768px) {
+    .slider-title {
+      font-size: 2.4rem; 
+    }
+    body {
+      padding-top: 195px;
+    }
+  
+    .slider-captions {
+      bottom: 10px; 
+    }
+  }
 
 #main-header header{
     background-color: #f8f9fa; 
@@ -196,6 +208,7 @@ p{
   font-size: 15px;
 }
   
+
 .footer {
   text-align: center;
   padding: 20px;
