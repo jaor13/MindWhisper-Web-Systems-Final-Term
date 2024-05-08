@@ -73,33 +73,41 @@ header ul li {
   margin-bottom: -5%;
   margin-top: 20px;
   margin-left: 20%;
+  border-bottom-left-radius: 10px;
   align-items: center;
 }
 
+.form-control{
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
 input{
-  padding: 10px;
+  padding: 15px;
   border: 1px solid #ccc;
-  border-radius: 5px 0 0 5px;
-  width: 70%;
+  border-radius: 0px 0 0 0px;
+  width: 80%;
   box-sizing: border-box; 
 }
 
 button[type="submit"] {
-  padding: 10px 20px;
+  padding: 6px 20px 6px;
   border: 1px solid #f89625;
   background-color: #f89625;
   color: #fff;
-  border-radius: 0 5px 5px 0;
+  margin-right: 10%;
+  border-radius: 0px 5px 5px 0px;
   cursor: pointer;
 }
 
 button[type="submit"]:hover,
 button[type="submit"]:focus {
   background-color: #d66800;
+  border-color: #d66800;
 }
 
 .btn-primary:focus{
-  border-color: #f89625;
+  border-color: #fc8600;
 }
 
 @media screen and (max-width: 940px) {
@@ -110,19 +118,19 @@ button[type="submit"]:focus {
 
 .container-list {
   display: flex;
-  justify-content: space-between; /* Align items horizontally with space between */
+  justify-content: space-between; 
   padding: 90px;
 }
 
 #container-list{
   display: flex;
-  justify-content: space-between; /* Align items horizontally with space between */
+  justify-content: space-between; 
   padding: 90px;
   margin-top: -12%;
 }
 
 .container-list .card {
-  width: 23rem;
+  width: 20rem;
 }
 
 .card {
@@ -144,12 +152,45 @@ button[type="submit"]:focus {
   border-top-right-radius: 10px;
 }
 
+#Irfa-img{
+  display: block;
+  margin: 0 auto;
+  width: 101%;
+  height: 38  % ;
+  margin-top: ;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#BUOSAS{
+  width: 100.5%;
+}
+
 #DLMR{
   width: 100.5%;
 }
 
+#BUOSAS-txt{
+  margin-top: 13px;
+  text-align: justify;
+}
+
+#BUOSAS-icon{
+  margin-top: 20%;
+}
+
+#Morico-txt{
+  margin-top: 40px;
+  text-align: justify;
+}
+
+#location-icon{
+  margin-top: 20%;
+}
+
 .card-body {
-  padding: 20px;
+  padding: 25px;
 }
 
 .card-title {
@@ -159,7 +200,7 @@ button[type="submit"]:focus {
 }
 
 .card-text {
-  margin-top: 10px;
+  margin-top: 12px;
   text-align: justify;
 }
 
