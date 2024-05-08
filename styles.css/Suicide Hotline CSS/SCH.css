@@ -146,3 +146,50 @@ a:hover {
     padding-right: 50px;
 }
 
+.footer {
+    margin-top: -5%;
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 0px;
+    background-color: #444;
+    color: #FFF; 
+  }
+  
+  @media screen and (max-width: 940px) {
+    .footer {
+      padding: 30px 10px; 
+    } 
+  }
+  
+  .footer h2 {
+    font-size: 26px;
+    margin-top: 10px; 
+  }
+  
+  .footer p {
+    text-align: center;
+    text-indent: 20px; 
+    color: #FFF;
+  }
+  
+  .footer .link-list li {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #6C6C6C; 
+  }
+  
+  .footer .link-list li a {
+    color: #FFF; 
+  }
+  
+  .footer a {
+    text-decoration: none;
+    outline: none;
+    color: #fff; 
+  }
+  
+  .footer a:hover {
+    color: #835c5c; 
+  }
+  
+
