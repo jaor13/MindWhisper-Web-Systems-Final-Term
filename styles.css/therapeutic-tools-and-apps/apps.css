@@ -35,48 +35,53 @@ header {
 header ul li {
   padding: 20px 23px 30px 23px; 
 } 
-
-.footer {
-  margin-top: -5%;
-  text-align: center;
-  padding: 20px;
-  padding-bottom: 0px;
-  background-color: #444;
-  color: #FFF; 
+h1{
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: #f89500;
 }
+#heading-text{
+  padding: 0px 100px 0px 100px;
+}
+
 @media screen and (max-width: 940px) {
-  .footer {
+  .container {
     padding: 30px 10px; 
   } 
 }
 
-.footer h2 {
-  font-size: 26px;
-  margin-top: 10px; 
+.app1{
+  margin-top: 50px;
+  margin-left: 150px;
+}
+#title {
+  font-size: 30px;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: bolder;
+}
+#p1 {
+  margin-top: 30px;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  padding: 0px 100px 0px 0px;
+} 
+.subtitle {
+  font-size: 18px;
+  font-weight: bold;
+  color: #4d4d4d;
+  margin-bottom: 20px;
 }
 
-.footer p {
-  text-align: center;
-  text-indent: 20px; 
-  color: #FFF;
+.LTM{
+  width: 30%;
+  margin-left: 5%;
 }
 
-.footer .link-list li {
-  text-align: center;
-  padding: 10px;
-  border-bottom: 1px solid #6C6C6C; 
+.LTM1{
+  width: 30%;
+  margin-top: -0.5%;
+  margin-left: -5%;
 }
 
-.footer .link-list li a {
-  color: #FFF; 
-}
-
-.footer a {
-  text-decoration: none;
-  outline: none;
-  color: #fff; 
-}
-
-.footer a:hover {
-  color: #835c5c; 
-}
