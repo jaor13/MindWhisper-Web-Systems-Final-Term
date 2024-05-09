@@ -35,12 +35,12 @@ header {
 header ul li {
   padding: 20px 23px 30px 23px; 
 } 
-h1{
+h1 {
   font-weight: bolder;
   text-transform: uppercase;
   color: #f89500;
 }
-#heading-text{
+#heading-text {
   padding: 0px 100px 0px 100px;
 }
 
@@ -50,7 +50,7 @@ h1{
   } 
 }
 
-.app1{
+.app1 {
   margin-top: 50px;
   margin-left: 150px;
 }
@@ -74,24 +74,254 @@ h1{
   margin-bottom: 20px;
 }
 
-.HS1{
+.HS1 {
   height: 450px;
   width: 450px;
   margin-top: -0.5%;
   margin-left: -2%;
 }
 
-.HS2{
+.HS2 {
   height: 450px;
   width: 450px;
   margin-top: -0.5%;
   margin-left: -11%;
 }
 
-.HS3{
+.HS3 {
   height: 450px;
   width: 450px;
   margin-top: -0.5%;
   margin-left: -11%;
 }
 
+.SM1 {
+  height: 450px;
+  width: 450px;
+  margin-top: -0.5%;
+  margin-left: -2%;
+}
+
+.SM2 {
+  height: 450px;
+  width: 450px;
+  margin-top: -0.5%;
+  margin-left: -11%;
+}
+
+.SM3 {
+  height: 450px;
+  width: 450px;
+  margin-top: -0.5%;
+  margin-left: -11%;
+}
+
+.MF1 {
+  height: 450px;
+  width: 450px;
+  margin-top: -0.5%;
+  margin-left: -2%;
+}
+
+.MF2 {
+  height: 450px;
+  width: 450px;
+  margin-top: -0.5%;
+  margin-left: -11%;
+}
+
+.MF3 {
+  height: 450px;
+  width: 450px;
+  margin-top: -0.5%;
+  margin-left: -11%;
+}
+
+.C1 {
+  height: 450px;
+  width: 450px;
+  margin-top: -0.5%;
+  margin-left: -2%;
+}
+
+.C2 {
+  height: 450px;
+  width: 450px;
+  margin-top: -0.5%;
+  margin-left: -11%;
+}
+
+.C3 {
+  height: 450px;
+  width: 450px;
+  margin-top: -0.5%;
+  margin-left: -11%;
+}
+
+.BM1 {
+  height: 450px;
+  width: 450px;
+  margin-top: -0.5%;
+  margin-left: -2%;
+}
+
+.BM2 {
+  height: 450px;
+  width: 450px;
+  margin-top: -0.5%;
+  margin-left: -11%;
+}
+
+.BM3 {
+  height: 450px;
+  width: 450px;
+  margin-top: -0.5%;
+  margin-left: -11%;
+}
+
+.A1 {
+  height: 450px;
+  width: 450px;
+  margin-top: -0.5%;
+  margin-left: -2%;
+}
+
+.A2 {
+  height: 450px;
+  width: 450px;
+  margin-top: -0.5%;
+  margin-left: -11%;
+}
+
+.A3 {
+  height: 450px;
+  width: 450px;
+  margin-top: -0.5%;
+  margin-left: -11%;
+}
+
+.W1 {
+  height: 450px;
+  width: 450px;
+  margin-top: -0.5%;
+  margin-left: -2%;
+}
+
+.W2 {
+  height: 450px;
+  width: 450px;
+  margin-top: -0.5%;
+  margin-left: -11%;
+}
+
+.W3 {
+  height: 450px;
+  width: 450px;
+  margin-top: -0.5%;
+  margin-left: -11%;
+}
+
+.MPS1 {
+  height: 450px;
+  width: 450px;
+  margin-top: -0.5%;
+  margin-left: -2%;
+}
+
+.MPS2 {
+  height: 450px;
+  width: 450px;
+  margin-top: -0.5%;
+  margin-left: -11%;
+}
+
+.MPS3 {
+  height: 450px;
+  width: 450px;
+  margin-top: -0.5%;
+  margin-left: -11%;
+}
+
+.TFC1 {
+  height: 450px;
+  width: 450px;
+  margin-top: -0.5%;
+  margin-left: -2%;
+}
+
+.TFC2 {
+  height: 450px;
+  width: 450px;
+  margin-top: -0.5%;
+  margin-left: -11%;
+}
+
+.TFC3 {
+  height: 450px;
+  width: 450px;
+  margin-top: -0.5%;
+  margin-left: -11%;
+}
+
+.VOS1 {
+  height: 450px;
+  width: 450px;
+  margin-top: -0.5%;
+  margin-left: -2%;
+}
+
+.VOS2 {
+  height: 450px;
+  width: 450px;
+  margin-top: -0.5%;
+  margin-left: -11%;
+}
+
+.VOS3 {
+  height: 450px;
+  width: 450px;
+  margin-top: -0.5%;
+  margin-left: -11%;
+}
+
+.TL1 {
+  height: 450px;
+  width: 450px;
+  margin-top: -0.5%;
+  margin-left: -2%;
+}
+
+.TL2 {
+  height: 450px;
+  width: 450px;
+  margin-top: -0.5%;
+  margin-left: -11%;
+}
+
+.TL3 {
+  height: 450px;
+  width: 450px;
+  margin-top: -0.5%;
+  margin-left: -11%;
+}
+
+.E1 {
+  height: 450px;
+  width: 450px;
+  margin-top: -0.5%;
+  margin-left: -2%;
+}
+
+.E2 {
+  height: 450px;
+  width: 450px;
+  margin-top: -0.5%;
+  margin-left: -11%;
+}
+
+.E3 {
+  height: 450px;
+  width: 450px;
+  margin-top: -0.5%;
+  margin-left: -11%;
+}
