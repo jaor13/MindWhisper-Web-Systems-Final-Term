@@ -8,6 +8,7 @@
     <meta name="tags" content="mental health, PTSD, anxiety, depression, eating disorders, assessment tests">
     <link rel="icon" href="assets/images/favicon_io/favicon.ico" type="image/x-icon">
     <link href ='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel ='stylesheet'>
+    <link href ='styles.css/Mental Health Assesment CSS/MHA.css' rel ='stylesheet'>
     <title>Mental Health Tests</title>
 </head>
 
@@ -27,12 +28,12 @@
 
     <main>   
 
-        <button><a href="#ptsd-section">Go to PTSD Assessment</a></button>
-        <button><a href="#anxiety-section">Go to Anxiety Assessment</a></button>
-        <button><a href="#depression-section">Go to Depression Assessment</a></button>
-        <button><a href="#eating-disorder-section">Go to Eating Disorder Assessment</a></button>
+        <button onclick="showSection('ptsd-section')">Go to PTSD Assessment</button>
+        <button onclick="showSection('anxiety-section')">Go to Anxiety Assessment</button>
+        <button onclick="showSection('depression-section')">Go to Depression Assessment</button>
+        <button onclick="showSection('eating-disorder-section')">Go to Eating Disorder Assessment</button>
 
-            <section>
+        <section id="ptsd-section" style="display: none;">
                 <h1 id="ptsd-section">PTSD Assessment</h1>
                 <form action="#">
                     <p>1. Have you experienced a traumatic event in your life?</p>
@@ -74,7 +75,7 @@
         <br>
         <br>
 
-            <section>
+        <section id="anxiety-section" style="display: none;">
                 <h1 id="anxiety-section">Anxiety Assessment</h1>
                 <form action="#">
                     <p>1. How often do you feel restless or on edge?</p>
@@ -116,7 +117,7 @@
         <br>
         <br>
 
-            <section>
+        <section id="depression-section" style="display: none;">
                 <h1 id="depression-section">Depression Assessment</h1>
                 <form action="#">
                     <p>1. Your mood recently?</p>
@@ -157,7 +158,7 @@
             <br>
             <br>
 
-            <section>
+            <section id="eating-disorder-section" style="display: none;">
                 <h1 id="eating-disorder-section">Eating Disorder Assessment</h1>
                 <form action="#">
                     <p>1. Do you frequently worry about your weight or body image?</p>
@@ -201,4 +202,17 @@
     </main> 
 
 </body>
+
+<script>
+    function showSection(sectionId) {
+        // Hide all sections
+        document.querySelectorAll('section').forEach(section => {
+            section.style.display = 'none';
+        });
+
+        // Show the selected section
+        document.getElementById(sectionId).style.display = 'block';
+    }
+</script>
+
 </html>
