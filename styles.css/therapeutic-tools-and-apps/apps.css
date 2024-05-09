@@ -74,14 +74,20 @@ h1{
   margin-bottom: 20px;
 }
 
-.LTM{
+.HS{
   width: 30%;
   margin-left: 5%;
 }
 
-.LTM1{
+.HS{
   width: 30%;
   margin-top: -0.5%;
   margin-left: -5%;
+}
+
+.HS{
+  width: 30%;
+  margin-top: -0.5%;
+  margin-left: -5.5%;
 }
 
