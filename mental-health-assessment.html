@@ -8,6 +8,28 @@
        
 </head>
 <body>
+
+    <header id="menu-jk">
+        <div class="container-fluid crisis-hotline">
+            <div class="row">
+                <div class="col-lg-6 no-padding">
+                    <p style="text-align: center;"><strong>Help is available, speak with someone right now:</strong></p>
+                </div>
+                <div class="col-lg-2 no-padding">
+                    <p>
+                        <span style="font-weight: bold;"><i class='bx bx-phone-call'></i><a href="tel:+028937603" style="color: black; text-decoration: none;">(02) 8893-7603</a></span>
+                    </p>
+                </div>
+                <div class="col no-padding">
+                    <p>
+                        <span style="font-weight: bold;"><i class='bx bx-phone-call'></i><a href="tel:+639178001123" style="color: black; text-decoration: none;">0917-8001-123</a></span>
+                         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <span style="font-weight: bold;"><i class='bx bx-phone-call'></i><a href="tel:+639178001123" style="color: black; text-decoration: none;">0917-8001-123</a></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
     <div class="container" id="main-container">
         <h1>Mental Health Test</h1>
         <p>Please select the test you would like to take:</p>
@@ -478,6 +500,29 @@
         <button onclick="submitTest('Eating Disorder')">Submit</button>
     </div>
 
+    <footer class="footer mt-auto py-3">
+        <div>
+            <div>
+                <div>
+                    <h1>Get in Touch</h1>
+                    <address>
+                        <p>Legazpi, Albay</p>
+                        <p>Region V, Philippines</p>
+                        <p>Email: <a href="mailto:mindwhispher@gmail.com">mindwhispher@gmail.com</a></p>
+                        <p>Phone: <a href="tel:+639085930667">+63 9085930667</a></p>
+                    </address>
+                </div>
+                <div>
+                    <h2>Useful Links</h2>
+                    <ul>
+                        <li><a href="">Terms of Use</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script>
         function showTest(testType) {
 
@@ -498,12 +543,31 @@
         }
     
         function submitTest(testType) {
-            const totalScore = responses[testType].reduce((acc, curr) => acc + curr, 0);
-            alert(`Your ${testType} score is: ${totalScore}`);
-            
-            document.getElementById(`${testType}-section`).style.display = 'none';
-            document.getElementById('main-container').style.display = 'block';
-        }
+    const totalScore = responses[testType].reduce((acc, curr) => acc + curr, 0);
+    let severityMessage = `Based on your score, you have ${getSeverity(totalScore)} of ${testType}.`;
+    if (totalScore >= 11) {
+        severityMessage += "\n\nPlease consider seeking professional help for further evaluation and support.";
+    }
+    alert(`Your ${testType} score is: ${totalScore}. ${severityMessage}`);
+    
+    document.getElementById(`${testType}-section`).style.display = 'none';
+    document.getElementById('main-container').style.display = 'block';
+}
+
+        function getSeverity(score) {
+    if (score >= 0 && score <= 5) {
+        return "Minimal or No Symptoms";
+    } else if (score >= 6 && score <= 10) {
+        return "Mild Symptoms";
+    } else if (score >= 11 && score <= 15) {
+        return "Moderate Symptoms";
+    } else if (score >= 16 && score <= 20) {
+        return "Moderately Severe Symptoms";
+    } else {
+        return "Severe Symptoms";
+    }
+}
+
     </script>
 </body>
 </html>
