@@ -53,7 +53,6 @@ h1 {
 .wrapper{
     background: white;
     width: auto;
-    border-radius: 15px;
     padding: 20px;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4);
 }
