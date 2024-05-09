@@ -47,9 +47,7 @@ header ul li {
   margin:0px;
 }
 
-.custom-container{
-  border-bottom: 2px;
-}
+
 
 .slider-title {
   margin-top: -7%;
@@ -109,6 +107,7 @@ button[type="submit"]:focus {
 .btn-primary:focus{
   border-color: #fc8600;
 }
+
 .container{
   margin-top:6em;
   margin-bottom:6em;
@@ -129,18 +128,57 @@ button[type="submit"]:focus {
   object-fit: cover;
 }
 
+#Morico-title{
+  margin-top: -10px;
+}
+
+#Morico-img{
+  width: 100.8%;
+}
+
+#Morico-txt{
+  margin-top: 5px;
+  text-align: justify;
+}
+
+#Morico-icon{
+  margin-top: -5%;
+}
+
 #Irfa-img{
   display: block;
-  margin-left: -2px;
+  margin-left: -1px;
   width: 101%;
-  height: 42.9%;
-  margin-top: -48px;
+  height: 40%;
+  margin-top: -30px;
   object-fit: cover;
-  clip-path: polygon(0 18%, 100% 18%, 100% 100%, 0 100%);
+  clip-path: polygon(0 12%, 100% 12%, 100% 100%, 0 100%);
+}
+
+#Irfa-title{
+  margin-top: -10px;
 }
 
 .Irfa-icon{
-  margin-top: 35px;
+  margin-top: 27px;
+}
+
+#CAB-title{
+  margin-top: -12px;
+}
+
+#CAB-txt{
+  margin-top: 5px;
+}
+
+#CAB-icon{
+  margin-top: -14px;
+}
+
+#CAB-img{
+  margin-left: -1px;
+  width: 101.1%;
+  margin-top: -1px;
 }
 
 #BUOSAS{
@@ -148,45 +186,52 @@ button[type="submit"]:focus {
 }
 
 #BUOSAS-title{
-  margin-top: -10px;
-}
-
-#DLMR{
-  width: 100.5%;
+  margin-top: -15px;
 }
 
 #BUOSAS-txt{
-  margin-top: 13px;
+  margin-top: -5px;
   text-align: justify;
 }
 
 #BUOSAS-icon{
-  margin-top: 25%;
+  margin-top: -4%;
 }
 
 #BCBM-title{
-  margin-top: -10px;
+  margin-top: -15px;
 }
 
 .BCBM-icon{
   margin-top: -10px;
 }
 
+#BCBM-txt{
+  margin-top: -8px;
+  text-align: justify;
+}
+
 #DLMR-title{
-  margin-top: -10px;
+  margin-top: -15px;
+}
+
+#DLMR{
+  width: 100.8%;
+  margin-top: -2px;
 }
 
 .DLMR-icon{
   margin-top: -10px;
+  color: #835c5c;
 }
 
-#Morico-txt{
-  margin-top: 20px;
+#DLMR-txt{
+  margin-top: -6px;
+}
+
+#card-text{
+  margin-top: -5px;
   text-align: justify;
-}
-
-#Morico-icon{
-  margin-top: 25%;
 }
 
 .card-body {
@@ -204,12 +249,17 @@ button[type="submit"]:focus {
   text-align: justify;
 }
 
-#card-text{
-  margin-top: 20px;
+#Irfa-text{
+  margin-top: 6px;
   text-align: justify;
 }
 
+.icon-txt{
+  color: #8a521f;
+}
+
 ul {
+  color: #834d0f;
   padding: 0;
   margin: 0;
   list-style-type: none;
