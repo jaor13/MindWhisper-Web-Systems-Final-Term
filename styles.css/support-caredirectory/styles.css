@@ -119,8 +119,6 @@ button[type="submit"]:focus {
   box-shadow: 5px 5px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s; 
   height: 600px; 
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
 }
 
 .card-img-top {
@@ -129,22 +127,20 @@ button[type="submit"]:focus {
   width: 100%;
   height: 35% ;
   object-fit: cover;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
 }
 
 #Irfa-img{
   display: block;
-  margin: 0 auto;
+  margin-left: -2px;
   width: 101%;
-  height: 35% ;
+  height: 42.9%;
+  margin-top: -48px;
   object-fit: cover;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  clip-path: polygon(0 18%, 100% 18%, 100% 100%, 0 100%);
 }
 
 .Irfa-icon{
-  margin-top: 25px;
+  margin-top: 35px;
 }
 
 #BUOSAS{
@@ -190,7 +186,7 @@ button[type="submit"]:focus {
 }
 
 #Morico-icon{
-  margin-top: 20%;
+  margin-top: 25%;
 }
 
 .card-body {
