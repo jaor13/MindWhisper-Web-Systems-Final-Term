@@ -137,14 +137,22 @@ button[type="submit"]:focus {
   display: block;
   margin: 0 auto;
   width: 101%;
-  height: 38% ;
+  height: 35% ;
   object-fit: cover;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
 
+.Irfa-icon{
+  margin-top: 25px;
+}
+
 #BUOSAS{
   width: 100.5%;
+}
+
+#BUOSAS-title{
+  margin-top: -10px;
 }
 
 #DLMR{
@@ -157,15 +165,31 @@ button[type="submit"]:focus {
 }
 
 #BUOSAS-icon{
-  margin-top: 20%;
+  margin-top: 25%;
+}
+
+#BCBM-title{
+  margin-top: -10px;
+}
+
+.BCBM-icon{
+  margin-top: -10px;
+}
+
+#DLMR-title{
+  margin-top: -10px;
+}
+
+.DLMR-icon{
+  margin-top: -10px;
 }
 
 #Morico-txt{
-  margin-top: 40px;
+  margin-top: 20px;
   text-align: justify;
 }
 
-#location-icon{
+#Morico-icon{
   margin-top: 20%;
 }
 
@@ -185,7 +209,7 @@ button[type="submit"]:focus {
 }
 
 #card-text{
-  margin-top: 35px;
+  margin-top: 20px;
   text-align: justify;
 }
 
