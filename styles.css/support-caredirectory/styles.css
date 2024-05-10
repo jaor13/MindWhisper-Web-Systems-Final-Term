@@ -165,6 +165,11 @@ button[type="submit"]:focus {
   margin-top: -10px;
 }
 
+#Irfa-text{
+  margin-top: 6px;
+  text-align: justify;
+}
+
 .Irfa-icon{
   margin-top: 27px;
 }
@@ -235,6 +240,40 @@ button[type="submit"]:focus {
   margin-top: -6px;
 }
 
+.HMN-icon{
+  margin-top: 35px;
+}
+
+#HMN-img{
+  width: 100.8%;
+  margin-top: -2px;
+}
+
+#HMN-title{
+  margin-top: -15px;
+}
+
+#HMN-txt{
+  margin-top: -6px;
+}
+
+.HMN-icon{
+  margin-top: 35px;
+}
+
+#HMN-img{
+  width: 100.8%;
+  margin-top: -2px;
+}
+
+#HMN-title{
+  margin-top: -15px;
+}
+
+#HMN-txt{
+  margin-top: -6px;
+}
+
 #card-text{
   margin-top: -5px;
   text-align: justify;
@@ -255,10 +294,7 @@ button[type="submit"]:focus {
   text-align: justify;
 }
 
-#Irfa-text{
-  margin-top: 6px;
-  text-align: justify;
-}
+
 
 .icon-txt{
   color: #8a521f;
