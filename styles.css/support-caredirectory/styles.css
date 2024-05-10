@@ -80,6 +80,12 @@ header ul li {
   border-bottom-right-radius: 0px;
 }
 
+.form-control:hover,
+.form-control:focus {
+        border-color: #f89625;      
+}
+
+
 input{
   padding: 15px;
   border: 1px solid #ccc;
