@@ -248,6 +248,10 @@ header .btn {
   margin-top: 10px; 
 }
 
+.bx-phone-call{
+  margin-right: 3px;
+}
+
 .footer p {
   text-align: center;
   text-indent: 20px; 

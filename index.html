@@ -207,45 +207,53 @@
             </div>
         </footer>
         
-    </body>
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        let noOfCharac = 300;
-        let blogSingles = document.querySelectorAll(".blog-single");
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                let noOfCharac = 300;
+                let blogSingles = document.querySelectorAll(".blog-single");
 
-        blogSingles.forEach((blogSingle, index) => {
-            let serviceContent = blogSingle.querySelector(".service-content");
-            let originalContent = serviceContent.innerHTML.trim(); 
+                blogSingles.forEach((blogSingle, index) => {
+                    let serviceContent = blogSingle.querySelector(".service-content");
+                    let originalContent = serviceContent.innerHTML.trim(); 
 
-            let limitedContent = originalContent.substring(0, noOfCharac);
-            serviceContent.innerHTML = limitedContent;
+                    let limitedContent = originalContent.substring(0, noOfCharac);
+                    serviceContent.innerHTML = limitedContent;
 
-            let hiddenContent = originalContent.substring(noOfCharac);
-            let moreText = document.createElement("span");
-            moreText.innerHTML = hiddenContent;
-            moreText.classList.add("more", "hide");
-            serviceContent.appendChild(moreText);
+                    let hiddenContent = originalContent.substring(noOfCharac);
+                    let moreText = document.createElement("span");
+                    moreText.innerHTML = hiddenContent;
+                    moreText.classList.add("more", "hide");
+                    serviceContent.appendChild(moreText);
 
-            blogSingle.querySelector(".readbtn").addEventListener("click", function() {
-                toggleContent(index);
+                    blogSingle.querySelector(".readbtn").addEventListener("click", function() {
+                        toggleContent(index);
+                    });
+                });
+
+                function toggleContent(index) {
+                    let blogSingle = document.querySelector(`.blog-single[data-index="${index}"]`);
+                    let moreText = blogSingle.querySelector(".more");
+                    let btn = blogSingle.querySelector(".readbtn");
+
+                    if (moreText.classList.contains("hide")) {
+                        moreText.classList.remove("hide");
+                        btn.textContent = "Read Less";
+                    } else {
+                        moreText.classList.add("hide");
+                        btn.textContent = "Read More";
+                    }
+                }
             });
-        });
 
-        function toggleContent(index) {
-            let blogSingle = document.querySelector(`.blog-single[data-index="${index}"]`);
-            let moreText = blogSingle.querySelector(".more");
-            let btn = blogSingle.querySelector(".readbtn");
+            document.addEventListener("DOMContentLoaded", function() {
+                document.addEventListener("keydown", function(event) {
+                    console.log("Key pressed at: " + new Date().toLocaleString());
+                });
 
-            if (moreText.classList.contains("hide")) {
-                moreText.classList.remove("hide");
-                btn.textContent = "Read Less";
-            } else {
-                moreText.classList.add("hide");
-                btn.textContent = "Read More";
-            }
-        }
-    });
-</script>
-
-
+                document.addEventListener("click", function(event) {
+                    console.log("Clicked at: " + new Date().toLocaleString());
+                });
+            });
+        </script>
+</body>
 </html>
