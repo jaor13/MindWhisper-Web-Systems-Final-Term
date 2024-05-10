@@ -41,15 +41,6 @@ h1 {
   color: #f89500;
 }
 
-.heading p {
-  margin-top: 30px;
-  font-size: 16px;
-  line-height: 1.6;
-  margin-bottom: 20px;
-  padding: 0px 100px 0px 0px;
-  text-align: justify;
-  content: #9b6d32;
-} 
 
 #heading-text {
   padding: 0px 100px 0px 100px;
@@ -75,8 +66,7 @@ h1 {
     color: #9b6d32;
     margin-bottom: 35px;
     text-align: center;
-    padding: 0px 100px 0px 100px;
-    text-align: justify;
+    padding: 0px 20px 0px 20px;
 }
 
 .wrapper h1{
@@ -93,18 +83,8 @@ h1 {
   color: #9b6d32;
   margin-bottom: 35px;
   text-align: center;
-  padding: 0px 100px 0px 100px;
-  text-align: justify;
+  padding: 0px 20px 0px 20px;
 }
-
-#p1 {
-  margin-top: 30px;
-  font-size: 16px;
-  line-height: 1.6;
-  margin-bottom: 20px;
-  padding: 0px 100px 0px 0px;
-  text-align: justify;
-} 
 
 .row .team-cards{
     width: 85%;
