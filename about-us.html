@@ -13,6 +13,18 @@
     <title>About Us</title>
 </head>
 <body>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.addEventListener("keydown", function(event) {
+                console.log("Key pressed at: " + new Date().toLocaleString());
+            });
+        
+            document.addEventListener("click", function(event) {
+                console.log("Clicked at: " + new Date().toLocaleString());
+            });
+        });
+        </script>
+        
     <header id="menu-jk" class="bg-light">
         <div class="container-fluid crisis-hotline">
             <div class="row">
