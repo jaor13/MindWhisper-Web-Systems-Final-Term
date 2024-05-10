@@ -67,7 +67,9 @@ header ul li {
   line-height: 1.6;
   margin-bottom: 20px;
   padding: 0px 100px 0px 0px;
+  text-align: justify;
 } 
+
 .subtitle {
   font-size: 18px;
   font-weight: bold;
