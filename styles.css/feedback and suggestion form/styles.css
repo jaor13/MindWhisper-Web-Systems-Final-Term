@@ -154,7 +154,7 @@ button:hover {
     }
 }
 
-.modal {
+#modal {
     display: none;
     position: fixed;
     z-index: 1;
@@ -168,22 +168,39 @@ button:hover {
 
 .modal-content {
     background-color: #fefefe;
-    margin: 15% auto;
+    margin: 0 auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    width: 23%;
+    margin-top: 15%;
+    border-radius: 13px;
+}
+
+.message{
+    align-items: center;
+    margin-left: 50px;
 }
 
 .close {
-    color: #aaa;
+    color: #f8b90c;
     float: right;
-    font-size: 28px;
+    font-size: 30px;
     font-weight: bold;
+    margin-top: -10px;
 }
 
 .close:hover,
 .close:focus {
-    color: black;
+    color: rgb(170, 136, 62);
     text-decoration: none;
     cursor: pointer;
+}
+
+.feedback-icon{
+    height: 150px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 75px;
 }
