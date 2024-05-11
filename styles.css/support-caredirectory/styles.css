@@ -274,6 +274,18 @@ button[type="submit"]:focus {
   margin-top: -6px;
 }
 
+#LMMC-title{
+  margin-top: -15px;
+}
+
+#LMMC-txt{
+  margin-top: -6px;
+}
+
+.LMMC-icon{
+  margin-top: 55px;
+}
+
 #card-text{
   margin-top: -5px;
   text-align: justify;
