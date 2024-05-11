@@ -5,6 +5,7 @@
   padding: 0;
   font-family: "Raleway", sans-serif;
   font-weight: 400;
+  list-style: none;
 }
 
 html, body {
@@ -12,7 +13,7 @@ html, body {
 }
 
 body {
-  padding-top: 96px;
+  padding-top: 50px;
 }
 
 a {
@@ -35,10 +36,18 @@ header {
 header ul li {
   padding: 20px 23px 30px 23px; 
 } 
-h1 {
+.text-center {
   font-weight: bolder;
   text-transform: uppercase;
   color: #f89500;
+}
+
+.container{
+  margin-bottom: 150px;
+}
+
+.heading p{
+  text-align: center;
 }
 
 
