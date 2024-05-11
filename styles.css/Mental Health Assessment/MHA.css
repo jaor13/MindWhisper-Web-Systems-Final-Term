@@ -88,12 +88,11 @@ h1, h2, h3 {
 }
 button {
   display: inline-block;
-  padding: 6px 12px; 
-  width: auto; 
+  padding: 12px; 
   margin: 0 auto; 
-  border: none;
+  border: solid;
   border-radius: 5px;
-  background-color: rgb(216, 196, 18);
+  background-color: rgb(238, 186, 64);
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
@@ -119,7 +118,7 @@ button:hover {
 
 .response-dropdown {
   padding: 4px 6px; 
-  font-size: 16px; 
+  font-size: 18px; 
   border-radius: 5px;
   border: 1px solid #ccc;
   background-color: #fff;
