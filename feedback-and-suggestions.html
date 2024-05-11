@@ -67,7 +67,7 @@
     
         <script>
             document.getElementById("feedbackForm").addEventListener("submit", function(event) {
-                event.preventDefault(); // Prevent the default form submission behavior
+                event.preventDefault(); 
                 
                 var modal = document.getElementById("modal");
                 modal.style.display = "block";
@@ -77,7 +77,7 @@
             closeButton.onclick = function() {
                 var modal = document.getElementById("modal");
                 modal.style.display = "none";
-                window.location.href = "index.html"; // Redirect to index.html when closing the modal
+                window.location.href = "index.html"; 
             };
         </script>
 </body>
