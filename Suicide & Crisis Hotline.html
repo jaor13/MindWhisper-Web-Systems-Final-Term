@@ -244,5 +244,16 @@
     </div>
 </footer>
 
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    document.addEventListener("keydown", function(event) {
+        console.log("Key pressed at: " + new Date().toLocaleString());
+    });
+
+    document.addEventListener("click", function(event) {
+        console.log("Clicked at: " + new Date().toLocaleString());
+    });
+});
+</script>
 </body>
 </html>
