@@ -233,7 +233,6 @@ button[type="submit"]:focus {
 
 .DLMR-icon{
   margin-top: -10px;
-  color: #835c5c;
 }
 
 #DLMR-txt{
@@ -282,8 +281,32 @@ button[type="submit"]:focus {
   margin-top: -6px;
 }
 
+#LMMC-img{
+  width: 101%;
+}
+
 .LMMC-icon{
   margin-top: 55px;
+}
+
+#Ateneo-list{
+  color: #8a521f;
+}
+
+#Ateneo-img{
+  width: 101%;
+}
+
+#Ateneo-title{
+  margin-top: -15px;
+}
+
+#Ateneo-txt{
+  margin-top: -6px;
+}
+
+.Ateneo-icon{
+  margin-top: -15px;
 }
 
 #card-text{
