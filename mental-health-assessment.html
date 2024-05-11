@@ -42,463 +42,470 @@
     <div class="container question-section" id="PTSD-section">
         <h2>PTSD Test</h2>
         <p>Please answer the following questions based on how often you have experienced each symptom in the past month:</p>
+        
         <div class="question">
-            1. Intrusive thoughts about a traumatic event.
-            <div>
-                <button class="response-button" onclick="selectResponse('PTSD', 1, 0)">Never</button>
-                <button class="response-button" onclick="selectResponse('PTSD', 1, 1)">Rarely</button>
-                <button class="response-button" onclick="selectResponse('PTSD', 1, 2)">Occasionally</button>
-                <button class="response-button" onclick="selectResponse('PTSD', 1, 3)">Frequently</button>
-                <button class="response-button" onclick="selectResponse('PTSD', 1, 4)">Very Frequently</button>
-            </div>
+            <label for="question1">1. Intrusive thoughts about a traumatic event.</label>
+            <select class="response-dropdown" id="question1" onchange="selectResponse('PTSD', 1, this.value)">
+                <option value="0">Never</option>
+                <option value="1">Rarely</option>
+                <option value="2">Occasionally</option>
+                <option value="3">Frequently</option>
+                <option value="4">Very Frequently</option>
+            </select>
         </div>
         
         <div class="question">
-            2. Avoiding activities that remind you of a traumatic event.
-            <div>
-                <button class="response-button" onclick="selectResponse('PTSD', 2, 0)">Never</button>
-                <button class="response-button" onclick="selectResponse('PTSD', 2, 1)">Rarely</button>
-                <button class="response-button" onclick="selectResponse('PTSD', 2, 2)">Occasionally</button>
-                <button class="response-button" onclick="selectResponse('PTSD', 2, 3)">Frequently</button>
-                <button class="response-button" onclick="selectResponse('PTSD', 2, 4)">Very Frequently</button>
-            </div>
+            <label for="question2">2. Avoiding activities that remind you of a traumatic event.</label>
+            <select class="response-dropdown" id="question2" onchange="selectResponse('PTSD', 2, this.value)">
+                <option value="0">Never</option>
+                <option value="1">Rarely</option>
+                <option value="2">Occasionally</option>
+                <option value="3">Frequently</option>
+                <option value="4">Very Frequently</option>
+            </select>
         </div>
         
         <div class="question">
-            3. Flashbacks or nightmares about a traumatic event.
-            <div>
-                <button class="response-button" onclick="selectResponse('PTSD', 3, 0)">Never</button>
-                <button class="response-button" onclick="selectResponse('PTSD', 3, 1)">Rarely</button>
-                <button class="response-button" onclick="selectResponse('PTSD', 3, 2)">Occasionally</button>
-                <button class="response-button" onclick="selectResponse('PTSD', 3, 3)">Frequently</button>
-                <button class="response-button" onclick="selectResponse('PTSD', 3, 4)">Very Frequently</button>
-            </div>
+            <label for="question3">3. Flashbacks or nightmares about a traumatic event.</label>
+            <select class="response-dropdown" id="question3" onchange="selectResponse('PTSD', 3, this.value)">
+                <option value="0">Never</option>
+                <option value="1">Rarely</option>
+                <option value="2">Occasionally</option>
+                <option value="3">Frequently</option>
+                <option value="4">Very Frequently</option>
+            </select>
         </div>
         
         <div class="question">
-            4. Hyperarousal or feeling on edge.
-            <div>
-                <button class="response-button" onclick="selectResponse('PTSD', 4, 0)">Never</button>
-                <button class="response-button" onclick="selectResponse('PTSD', 4, 1)">Rarely</button>
-                <button class="response-button" onclick="selectResponse('PTSD', 4, 2)">Occasionally</button>
-                <button class="response-button" onclick="selectResponse('PTSD', 4, 3)">Frequently</button>
-                <button class="response-button" onclick="selectResponse('PTSD', 4, 4)">Very Frequently</button>
-            </div>
+            <label for="question4">4. Hyperarousal or feeling on edge.</label>
+            <select class="response-dropdown" id="question4" onchange="selectResponse('PTSD', 4, this.value)">
+                <option value="0">Never</option>
+                <option value="1">Rarely</option>
+                <option value="2">Occasionally</option>
+                <option value="3">Frequently</option>
+                <option value="4">Very Frequently</option>
+            </select>
         </div>
         
         <div class="question">
-            5. Hypervigilance or heightened sensitivity to surroundings.
-            <div>
-                <button class="response-button" onclick="selectResponse('PTSD', 5, 0)">Never</button>
-                <button class="response-button" onclick="selectResponse('PTSD', 5, 1)">Rarely</button>
-                <button class="response-button" onclick="selectResponse('PTSD', 5, 2)">Occasionally</button>
-                <button class="response-button" onclick="selectResponse('PTSD', 5, 3)">Frequently</button>
-                <button class="response-button" onclick="selectResponse('PTSD', 5, 4)">Very Frequently</button>
-            </div>
+            <label for="question5">5. Hypervigilance or heightened sensitivity to surroundings.</label>
+            <select class="response-dropdown" id="question5" onchange="selectResponse('PTSD', 5, this.value)">
+                <option value="0">Never</option>
+                <option value="1">Rarely</option>
+                <option value="2">Occasionally</option>
+                <option value="3">Frequently</option>
+                <option value="4">Very Frequently</option>
+            </select>
         </div>
-        
-<div class="question">
-    6. Difficulty sleeping or staying asleep.
-    <div>
-        <button class="response-button" onclick="selectResponse('PTSD', 6, 0)">Never</button>
-        <button class="response-button" onclick="selectResponse('PTSD', 6, 1)">Rarely</button>
-        <button class="response-button" onclick="selectResponse('PTSD', 6, 2)">Occasionally</button>
-        <button class="response-button" onclick="selectResponse('PTSD', 6, 3)">Frequently</button>
-        <button class="response-button" onclick="selectResponse('PTSD', 6, 4)">Very Frequently</button>
-    </div>
-</div>
-
-<div class="question">
-    7. Irritability or anger outbursts.
-    <div>
-        <button class="response-button" onclick="selectResponse('PTSD', 7, 0)">Never</button>
-        <button class="response-button" onclick="selectResponse('PTSD', 7, 1)">Rarely</button>
-        <button class="response-button" onclick="selectResponse('PTSD', 7, 2)">Occasionally</button>
-        <button class="response-button" onclick="selectResponse('PTSD', 7, 3)">Frequently</button>
-        <button class="response-button" onclick="selectResponse('PTSD', 7, 4)">Very Frequently</button>
-    </div>
-</div>
-
-<div class="question">
-    8. Feelings of detachment or emotional numbness.
-    <div>
-        <button class="response-button" onclick="selectResponse('PTSD', 8, 0)">Never</button>
-        <button class="response-button" onclick="selectResponse('PTSD', 8, 1)">Rarely</button>
-        <button class="response-button" onclick="selectResponse('PTSD', 8, 2)">Occasionally</button>
-        <button class="response-button" onclick="selectResponse('PTSD', 8, 3)">Frequently</button>
-        <button class="response-button" onclick="selectResponse('PTSD', 8, 4)">Very Frequently</button>
-    </div>
-</div>
-
-<div class="question">
-    9. Difficulty concentrating or focusing.
-    <div>
-        <button class="response-button" onclick="selectResponse('PTSD', 9, 0)">Never</button>
-        <button class="response-button" onclick="selectResponse('PTSD', 9, 1)">Rarely</button>
-        <button class="response-button" onclick="selectResponse('PTSD', 9, 2)">Occasionally</button>
-        <button class="response-button" onclick="selectResponse('PTSD', 9, 3)">Frequently</button>
-        <button class="response-button" onclick="selectResponse('PTSD', 9, 4)">Very Frequently</button>
-    </div>
-</div>
-
-<div class="question">
-    10. Avoidance of people, places, or activities.
-    <div>
-        <button class="response-button" onclick="selectResponse('PTSD', 10, 0)">Never</button>
-        <button class="response-button" onclick="selectResponse('PTSD', 10, 1)">Rarely</button>
-        <button class="response-button" onclick="selectResponse('PTSD', 10, 2)">Occasionally</button>
-        <button class="response-button" onclick="selectResponse('PTSD', 10, 3)">Frequently</button>
-        <button class="response-button" onclick="selectResponse('PTSD', 10, 4)">Very Frequently</button>
-    </div>
-</div>
-        
+    
+        <div class="question">
+            <label for="question6">6. Difficulty sleeping or staying asleep.</label>
+            <select class="response-dropdown" id="question6" onchange="selectResponse('PTSD', 6, this.value)">
+                <option value="0">Never</option>
+                <option value="1">Rarely</option>
+                <option value="2">Occasionally</option>
+                <option value="3">Frequently</option>
+                <option value="4">Very Frequently</option>
+            </select>
+        </div>
+    
+        <div class="question">
+            <label for="question7">7. Irritability or anger outbursts.</label>
+            <select class="response-dropdown" id="question7" onchange="selectResponse('PTSD', 7, this.value)">
+                <option value="0">Never</option>
+                <option value="1">Rarely</option>
+                <option value="2">Occasionally</option>
+                <option value="3">Frequently</option>
+                <option value="4">Very Frequently</option>
+            </select>
+        </div>
+    
+        <div class="question">
+            <label for="question8">8. Feelings of detachment or emotional numbness.</label>
+            <select class="response-dropdown" id="question8" onchange="selectResponse('PTSD', 8, this.value)">
+                <option value="0">Never</option>
+                <option value="1">Rarely</option>
+                <option value="2">Occasionally</option>
+                <option value="3">Frequently</option>
+                <option value="4">Very Frequently</option>
+            </select>
+        </div>
+    
+        <div class="question">
+            <label for="question9">9. Difficulty concentrating or focusing.</label>
+            <select class="response-dropdown" id="question9" onchange="selectResponse('PTSD', 9, this.value)">
+                <option value="0">Never</option>
+                <option value="1">Rarely</option>
+                <option value="2">Occasionally</option>
+                <option value="3">Frequently</option>
+                <option value="4">Very Frequently</option>
+            </select>
+        </div>
+    
+        <div class="question">
+            <label for="question10">10. Avoidance of people, places, or activities.</label>
+            <select class="response-dropdown" id="question10" onchange="selectResponse('PTSD', 10, this.value)">
+                <option value="0">Never</option>
+                <option value="1">Rarely</option>
+                <option value="2">Occasionally</option>
+                <option value="3">Frequently</option>
+                <option value="4">Very Frequently</option>
+            </select>
+        </div>
         <button onclick="submitTest('PTSD')">Submit</button>
+    </div>
+    
     </div>
 
     <div class="container question-section" id="Depression-section">
         <h2>Depression Test</h2>
         <p>Please answer the following questions based on how often you have experienced each symptom in the past month:</p>
         <div class="question">
-            1. Persistent sadness or low mood.
-            <div>
-                <button class="response-button" onclick="selectResponse('Depression', 1, 0)">Never</button>
-                <button class="response-button" onclick="selectResponse('Depression', 1, 1)">Rarely</button>
-                <button class="response-button" onclick="selectResponse('Depression', 1, 2)">Occasionally</button>
-                <button class="response-button" onclick="selectResponse('Depression', 1, 3)">Frequently</button>
-                <button class="response-button" onclick="selectResponse('Depression', 1, 4)">Very Frequently</button>
-            </div>
+            <label for="question1">1. Persistent sadness or low mood.</label>
+            <select class="response-dropdown" id="question1" onchange="selectResponse('Depression', 1, this.value)">
+                <option value="0">Never</option>
+                <option value="1">Rarely</option>
+                <option value="2">Occasionally</option>
+                <option value="3">Frequently</option>
+                <option value="4">Very Frequently</option>
+            </select>
         </div>
-        
+    
         <div class="question">
-            2. Loss of interest or pleasure in activities.
-            <div>
-                <button class="response-button" onclick="selectResponse('Depression', 2, 0)">Never</button>
-                <button class="response-button" onclick="selectResponse('Depression', 2, 1)">Rarely</button>
-                <button class="response-button" onclick="selectResponse('Depression', 2, 2)">Occasionally</button>
-                <button class="response-button" onclick="selectResponse('Depression', 2, 3)">Frequently</button>
-                <button class="response-button" onclick="selectResponse('Depression', 2, 4)">Very Frequently</button>
-            </div>
+            <label for="question2">2. Loss of interest or pleasure in activities.</label>
+            <select class="response-dropdown" id="question2" onchange="selectResponse('Depression', 2, this.value)">
+                <option value="0">Never</option>
+                <option value="1">Rarely</option>
+                <option value="2">Occasionally</option>
+                <option value="3">Frequently</option>
+                <option value="4">Very Frequently</option>
+            </select>
         </div>
-        
+    
         <div class="question">
-            3. Changes in appetite or weight.
-            <div>
-                <button class="response-button" onclick="selectResponse('Depression', 3, 0)">Never</button>
-                <button class="response-button" onclick="selectResponse('Depression', 3, 1)">Rarely</button>
-                <button class="response-button" onclick="selectResponse('Depression', 3, 2)">Occasionally</button>
-                <button class="response-button" onclick="selectResponse('Depression', 3, 3)">Frequently</button>
-                <button class="response-button" onclick="selectResponse('Depression', 3, 4)">Very Frequently</button>
-            </div>
+            <label for="question3">3. Changes in appetite or weight.</label>
+            <select class="response-dropdown" id="question3" onchange="selectResponse('Depression', 3, this.value)">
+                <option value="0">Never</option>
+                <option value="1">Rarely</option>
+                <option value="2">Occasionally</option>
+                <option value="3">Frequently</option>
+                <option value="4">Very Frequently</option>
+            </select>
         </div>
-        
+    
         <div class="question">
-            4. Fatigue or loss of energy.
-            <div>
-                <button class="response-button" onclick="selectResponse('Depression', 4, 0)">Never</button>
-                <button class="response-button" onclick="selectResponse('Depression', 4, 1)">Rarely</button>
-                <button class="response-button" onclick="selectResponse('Depression', 4, 2)">Occasionally</button>
-                <button class="response-button" onclick="selectResponse('Depression', 4, 3)">Frequently</button>
-                <button class="response-button" onclick="selectResponse('Depression', 4, 4)">Very Frequently</button>
-            </div>
+            <label for="question4">4. Fatigue or loss of energy.</label>
+            <select class="response-dropdown" id="question4" onchange="selectResponse('Depression', 4, this.value)">
+                <option value="0">Never</option>
+                <option value="1">Rarely</option>
+                <option value="2">Occasionally</option>
+                <option value="3">Frequently</option>
+                <option value="4">Very Frequently</option>
+            </select>
         </div>
-        
+    
         <div class="question">
-            5. Feelings of worthlessness or excessive guilt.
-            <div>
-                <button class="response-button" onclick="selectResponse('Depression', 5, 0)">Never</button>
-                <button class="response-button" onclick="selectResponse('Depression', 5, 1)">Rarely</button>
-                <button class="response-button" onclick="selectResponse('Depression', 5, 2)">Occasionally</button>
-                <button class="response-button" onclick="selectResponse('Depression', 5, 3)">Frequently</button>
-                <button class="response-button" onclick="selectResponse('Depression', 5, 4)">Very Frequently</button>
-            </div>
+            <label for="question5">5. Feelings of worthlessness or excessive guilt.</label>
+            <select class="response-dropdown" id="question5" onchange="selectResponse('Depression', 5, this.value)">
+                <option value="0">Never</option>
+                <option value="1">Rarely</option>
+                <option value="2">Occasionally</option>
+                <option value="3">Frequently</option>
+                <option value="4">Very Frequently</option>
+            </select>
         </div>
+    
         <div class="question">
-            6. Muscle tension or physical symptoms of anxiety.
-            <div>
-                <button class="response-button" onclick="selectResponse('Anxiety', 6, 0)">Never</button>
-                <button class="response-button" onclick="selectResponse('Anxiety', 6, 1)">Rarely</button>
-                <button class="response-button" onclick="selectResponse('Anxiety', 6, 2)">Occasionally</button>
-                <button class="response-button" onclick="selectResponse('Anxiety', 6, 3)">Frequently</button>
-                <button class="response-button" onclick="selectResponse('Anxiety', 6, 4)">Very Frequently</button>
-            </div>
+            <label for="question6">6. Muscle tension or physical symptoms of anxiety.</label>
+            <select class="response-dropdown" id="question6" onchange="selectResponse('Depression', 6, this.value)">
+                <option value="0">Never</option>
+                <option value="1">Rarely</option>
+                <option value="2">Occasionally</option>
+                <option value="3">Frequently</option>
+                <option value="4">Very Frequently</option>
+            </select>
         </div>
-        
+    
         <div class="question">
-            7. Difficulty controlling worries or intrusive thoughts.
-            <div>
-                <button class="response-button" onclick="selectResponse('Anxiety', 7, 0)">Never</button>
-                <button class="response-button" onclick="selectResponse('Anxiety', 7, 1)">Rarely</button>
-                <button class="response-button" onclick="selectResponse('Anxiety', 7, 2)">Occasionally</button>
-                <button class="response-button" onclick="selectResponse('Anxiety', 7, 3)">Frequently</button>
-                <button class="response-button" onclick="selectResponse('Anxiety', 7, 4)">Very Frequently</button>
-            </div>
+            <label for="question7">7. Difficulty controlling worries or intrusive thoughts.</label>
+            <select class="response-dropdown" id="question7" onchange="selectResponse('Depression', 7, this.value)">
+                <option value="0">Never</option>
+                <option value="1">Rarely</option>
+                <option value="2">Occasionally</option>
+                <option value="3">Frequently</option>
+                <option value="4">Very Frequently</option>
+            </select>
         </div>
-        
+    
         <div class="question">
-            8. Feelings of restlessness or being on edge.
-            <div>
-                <button class="response-button" onclick="selectResponse('Anxiety', 8, 0)">Never</button>
-                <button class="response-button" onclick="selectResponse('Anxiety', 8, 1)">Rarely</button>
-                <button class="response-button" onclick="selectResponse('Anxiety', 8, 2)">Occasionally</button>
-                <button class="response-button" onclick="selectResponse('Anxiety', 8, 3)">Frequently</button>
-                <button class="response-button" onclick="selectResponse('Anxiety', 8, 4)">Very Frequently</button>
-            </div>
+            <label for="question8">8. Feelings of restlessness or being on edge.</label>
+            <select class="response-dropdown" id="question8" onchange="selectResponse('Depression', 8, this.value)">
+                <option value="0">Never</option>
+                <option value="1">Rarely</option>
+                <option value="2">Occasionally</option>
+                <option value="3">Frequently</option>
+                <option value="4">Very Frequently</option>
+            </select>
         </div>
-        
+    
         <div class="question">
-            9. Fear of losing control or going crazy.
-            <div>
-                <button class="response-button" onclick="selectResponse('Anxiety', 9, 0)">Never</button>
-                <button class="response-button" onclick="selectResponse('Anxiety', 9, 1)">Rarely</button>
-                <button class="response-button" onclick="selectResponse('Anxiety', 9, 2)">Occasionally</button>
-                <button class="response-button" onclick="selectResponse('Anxiety', 9, 3)">Frequently</button>
-                <button class="response-button" onclick="selectResponse('Anxiety', 9, 4)">Very Frequently</button>
-            </div>
+            <label for="question9">9. Fear of losing control or going crazy.</label>
+            <select class="response-dropdown" id="question9" onchange="selectResponse('Depression', 9, this.value)">
+                <option value="0">Never</option>
+                <option value="1">Rarely</option>
+                <option value="2">Occasionally</option>
+                <option value="3">Frequently</option>
+                <option value="4">Very Frequently</option>
+            </select>
         </div>
-        
+    
         <div class="question">
-            10. Avoidance of situations that trigger anxiety.
-            <div>
-                <button class="response-button" onclick="selectResponse('Anxiety', 10, 0)">Never</button>
-                <button class="response-button" onclick="selectResponse('Anxiety', 10, 1)">Rarely</button>
-                <button class="response-button" onclick="selectResponse('Anxiety', 10, 2)">Occasionally</button>
-                <button class="response-button" onclick="selectResponse('Anxiety', 10, 3)">Frequently</button>
-                <button class="response-button" onclick="selectResponse('Anxiety', 10, 4)">Very Frequently</button>
-            </div>
+            <label for="question10">10. Avoidance of situations that trigger anxiety.</label>
+            <select class="response-dropdown" id="question10" onchange="selectResponse('Depression', 10, this.value)">
+                <option value="0">Never</option>
+                <option value="1">Rarely</option>
+                <option value="2">Occasionally</option>
+                <option value="3">Frequently</option>
+                <option value="4">Very Frequently</option>
+            </select>
         </div>
-        
         <button onclick="submitTest('Depression')">Submit</button>
     </div>
-
+    
     <div class="container question-section" id="Anxiety-section">
         <h2>Anxiety Test</h2>
         <p>Please answer the following questions based on how often you have experienced each symptom in the past month:</p>
         <div class="question">
-            1. Excessive worry or apprehension.
-            <div>
-                <button class="response-button" onclick="selectResponse('Anxiety', 1, 0)">Never</button>
-                <button class="response-button" onclick="selectResponse('Anxiety', 1, 1)">Rarely</button>
-                <button class="response-button" onclick="selectResponse('Anxiety', 1, 2)">Occasionally</button>
-                <button class="response-button" onclick="selectResponse('Anxiety', 1, 3)">Frequently</button>
-                <button class="response-button" onclick="selectResponse('Anxiety', 1, 4)">Very Frequently</button>
-            </div>
+            <label for="question1">1. Excessive worry or apprehension.</label>
+            <select class="response-dropdown" id="question1" onchange="selectResponse('Anxiety', 1, this.value)">
+                <option value="0">Never</option>
+                <option value="1">Rarely</option>
+                <option value="2">Occasionally</option>
+                <option value="3">Frequently</option>
+                <option value="4">Very Frequently</option>
+            </select>
         </div>
-        
+    
         <div class="question">
-            2. Restlessness or feeling on edge.
-            <div>
-                <button class="response-button" onclick="selectResponse('Anxiety', 2, 0)">Never</button>
-                <button class="response-button" onclick="selectResponse('Anxiety', 2, 1)">Rarely</button>
-                <button class="response-button" onclick="selectResponse('Anxiety', 2, 2)">Occasionally</button>
-                <button class="response-button" onclick="selectResponse('Anxiety', 2, 3)">Frequently</button>
-                <button class="response-button" onclick="selectResponse('Anxiety', 2, 4)">Very Frequently</button>
-            </div>
+            <label for="question2">2. Restlessness or feeling on edge.</label>
+            <select class="response-dropdown" id="question2" onchange="selectResponse('Anxiety', 2, this.value)">
+                <option value="0">Never</option>
+                <option value="1">Rarely</option>
+                <option value="2">Occasionally</option>
+                <option value="3">Frequently</option>
+                <option value="4">Very Frequently</option>
+            </select>
         </div>
-        
+    
         <div class="question">
-            3. Difficulty concentrating.
-            <div>
-                <button class="response-button" onclick="selectResponse('Anxiety', 3, 0)">Never</button>
-                <button class="response-button" onclick="selectResponse('Anxiety', 3, 1)">Rarely</button>
-                <button class="response-button" onclick="selectResponse('Anxiety', 3, 2)">Occasionally</button>
-                <button class="response-button" onclick="selectResponse('Anxiety', 3, 3)">Frequently</button>
-                <button class="response-button" onclick="selectResponse('Anxiety', 3, 4)">Very Frequently</button>
-            </div>
+            <label for="question3">3. Difficulty concentrating.</label>
+            <select class="response-dropdown" id="question3" onchange="selectResponse('Anxiety', 3, this.value)">
+                <option value="0">Never</option>
+                <option value="1">Rarely</option>
+                <option value="2">Occasionally</option>
+                <option value="3">Frequently</option>
+                <option value="4">Very Frequently</option>
+            </select>
         </div>
-        
+    
         <div class="question">
-            4. Difficulty falling or staying asleep.
-            <div>
-                <button class="response-button" onclick="selectResponse('Anxiety', 4, 0)">Never</button>
-                <button class="response-button" onclick="selectResponse('Anxiety', 4, 1)">Rarely</button>
-                <button class="response-button" onclick="selectResponse('Anxiety', 4, 2)">Occasionally</button>
-                <button class="response-button" onclick="selectResponse('Anxiety', 4, 3)">Frequently</button>
-                <button class="response-button" onclick="selectResponse('Anxiety', 4, 4)">Very Frequently</button>
-            </div>
+            <label for="question4">4. Difficulty falling or staying asleep.</label>
+            <select class="response-dropdown" id="question4" onchange="selectResponse('Anxiety', 4, this.value)">
+                <option value="0">Never</option>
+                <option value="1">Rarely</option>
+                <option value="2">Occasionally</option>
+                <option value="3">Frequently</option>
+                <option value="4">Very Frequently</option>
+            </select>
         </div>
-        
+    
         <div class="question">
-            5. Irritability or feeling easily annoyed.
-            <div>
-                <button class="response-button" onclick="selectResponse('Anxiety', 5, 0)">Never</button>
-                <button class="response-button" onclick="selectResponse('Anxiety', 5, 1)">Rarely</button>
-                <button class="response-button" onclick="selectResponse('Anxiety', 5, 2)">Occasionally</button>
-                <button class="response-button" onclick="selectResponse('Anxiety', 5, 3)">Frequently</button>
-                <button class="response-button" onclick="selectResponse('Anxiety', 5, 4)">Very Frequently</button>
-            </div>
+            <label for="question5">5. Irritability or feeling easily annoyed.</label>
+            <select class="response-dropdown" id="question5" onchange="selectResponse('Anxiety', 5, this.value)">
+                <option value="0">Never</option>
+                <option value="1">Rarely</option>
+                <option value="2">Occasionally</option>
+                <option value="3">Frequently</option>
+                <option value="4">Very Frequently</option>
+            </select>
         </div>
+    
         <div class="question">
-            6. Feelings of hopelessness or pessimism.
-            <div>
-                <button class="response-button" onclick="selectResponse('Depression', 6, 0)">Never</button>
-                <button class="response-button" onclick="selectResponse('Depression', 6, 1)">Rarely</button>
-                <button class="response-button" onclick="selectResponse('Depression', 6, 2)">Occasionally</button>
-                <button class="response-button" onclick="selectResponse('Depression', 6, 3)">Frequently</button>
-                <button class="response-button" onclick="selectResponse('Depression', 6, 4)">Very Frequently</button>
-            </div>
+            <label for="question6">6. Feeling of impending doom.</label>
+            <select class="response-dropdown" id="question6" onchange="selectResponse('Anxiety', 6, this.value)">
+                <option value="0">Never</option>
+                <option value="1">Rarely</option>
+                <option value="2">Occasionally</option>
+                <option value="3">Frequently</option>
+                <option value="4">Very Frequently</option>
+            </select>
         </div>
-        
+    
         <div class="question">
-            7. Difficulty concentrating or making decisions.
-            <div>
-                <button class="response-button" onclick="selectResponse('Depression', 7, 0)">Never</button>
-                <button class="response-button" onclick="selectResponse('Depression', 7, 1)">Rarely</button>
-                <button class="response-button" onclick="selectResponse('Depression', 7, 2)">Occasionally</button>
-                <button class="response-button" onclick="selectResponse('Depression', 7, 3)">Frequently</button>
-                <button class="response-button" onclick="selectResponse('Depression', 7, 4)">Very Frequently</button>
-            </div>
+            <label for="question7">7. Muscle tension or aches.</label>
+            <select class="response-dropdown" id="question7" onchange="selectResponse('Anxiety', 7, this.value)">
+                <option value="0">Never</option>
+                <option value="1">Rarely</option>
+                <option value="2">Occasionally</option>
+                <option value="3">Frequently</option>
+                <option value="4">Very Frequently</option>
+            </select>
         </div>
-        
+    
         <div class="question">
-            8. Thoughts of death or suicide.
-            <div>
-                <button class="response-button" onclick="selectResponse('Depression', 8, 0)">Never</button>
-                <button class="response-button" onclick="selectResponse('Depression', 8, 1)">Rarely</button>
-                <button class="response-button" onclick="selectResponse('Depression', 8, 2)">Occasionally</button>
-                <button class="response-button" onclick="selectResponse('Depression', 8, 3)">Frequently</button>
-                <button class="response-button" onclick="selectResponse('Depression', 8, 4)">Very Frequently</button>
-            </div>
+            <label for="question8">8. Feeling dizzy or lightheaded.</label>
+            <select class="response-dropdown" id="question8" onchange="selectResponse('Anxiety', 8, this.value)">
+                <option value="0">Never</option>
+                <option value="1">Rarely</option>
+                <option value="2">Occasionally</option>
+                <option value="3">Frequently</option>
+                <option value="4">Very Frequently</option>
+            </select>
         </div>
-        
+    
         <div class="question">
-            9. Changes in sleep patterns (insomnia or oversleeping).
-            <div>
-                <button class="response-button" onclick="selectResponse('Depression', 9, 0)">Never</button>
-                <button class="response-button" onclick="selectResponse('Depression', 9, 1)">Rarely</button>
-                <button class="response-button" onclick="selectResponse('Depression', 9, 2)">Occasionally</button>
-                <button class="response-button" onclick="selectResponse('Depression', 9, 3)">Frequently</button>
-                <button class="response-button" onclick="selectResponse('Depression', 9, 4)">Very Frequently</button>
-            </div>
+            <label for="question9">9. Feeling out of control or overwhelmed.</label>
+            <select class="response-dropdown" id="question9" onchange="selectResponse('Anxiety', 9, this.value)">
+                <option value="0">Never</option>
+                <option value="1">Rarely</option>
+                <option value="2">Occasionally</option>
+                <option value="3">Frequently</option>
+                <option value="4">Very Frequently</option>
+            </select>
         </div>
-        
+    
         <div class="question">
-            10. Loss of interest in personal hygiene or appearance.
-            <div>
-                <button class="response-button" onclick="selectResponse('Depression', 10, 0)">Never</button>
-                <button class="response-button" onclick="selectResponse('Depression', 10, 1)">Rarely</button>
-                <button class="response-button" onclick="selectResponse('Depression', 10, 2)">Occasionally</button>
-                <button class="response-button" onclick="selectResponse('Depression', 10, 3)">Frequently</button>
-                <button class="response-button" onclick="selectResponse('Depression', 10, 4)">Very Frequently</button>
-            </div>
+            <label for="question10">10. Avoidance of situations that make you anxious.</label>
+            <select class="response-dropdown" id="question10" onchange="selectResponse('Anxiety', 10, this.value)">
+                <option value="0">Never</option>
+                <option value="1">Rarely</option>
+                <option value="2">Occasionally</option>
+                <option value="3">Frequently</option>
+                <option value="4">Very Frequently</option>
+            </select>
         </div>
-        
         <button onclick="submitTest('Anxiety')">Submit</button>
     </div>
 
+    
+        
+     
     <div class="container question-section" id="EatingDisorder-section">
         <h2>Eating Disorder Test</h2>
         <p>Please answer the following questions based on how often you have experienced each symptom in the past month:</p>
+        
         <div class="question">
-            1. Preoccupation with food, weight, or body shape.
-            <div>
-                <button class="response-button" onclick="selectResponse('Eating Disorder', 1, 0)">Never</button>
-                <button class="response-button" onclick="selectResponse('Eating Disorder', 1, 1)">Rarely</button>
-                <button class="response-button" onclick="selectResponse('Eating Disorder', 1, 2)">Occasionally</button>
-                <button class="response-button" onclick="selectResponse('Eating Disorder', 1, 3)">Frequently</button>
-                <button class="response-button" onclick="selectResponse('Eating Disorder', 1, 4)">Very Frequently</button>
-            </div>
+            <label for="question1">1. Preoccupation with food, weight, or body shape.</label>
+            <select class="response-dropdown" id="question1" onchange="selectResponse('Eating Disorder', 1, this.value)">
+                <option value="0">Never</option>
+                <option value="1">Rarely</option>
+                <option value="2">Occasionally</option>
+                <option value="3">Frequently</option>
+                <option value="4">Very Frequently</option>
+            </select>
         </div>
-      
+        
         <div class="question">
-            2. Engaging in binge eating episodes.
-            <div>
-                <button class="response-button" onclick="selectResponse('Eating Disorder', 2, 0)">Never</button>
-                <button class="response-button" onclick="selectResponse('Eating Disorder', 2, 1)">Rarely</button>
-                <button class="response-button" onclick="selectResponse('Eating Disorder', 2, 2)">Occasionally</button>
-                <button class="response-button" onclick="selectResponse('Eating Disorder', 2, 3)">Frequently</button>
-                <button class="response-button" onclick="selectResponse('Eating Disorder', 2, 4)">Very Frequently</button>
-            </div>
+            <label for="question2">2. Engaging in binge eating episodes.</label>
+            <select class="response-dropdown" id="question2" onchange="selectResponse('Eating Disorder', 2, this.value)">
+                <option value="0">Never</option>
+                <option value="1">Rarely</option>
+                <option value="2">Occasionally</option>
+                <option value="3">Frequently</option>
+                <option value="4">Very Frequently</option>
+            </select>
         </div>
-      
+        
         <div class="question">
-            3. Engaging in compensatory behaviors such as vomiting or excessive exercise.
-            <div>
-                <button class="response-button" onclick="selectResponse('Eating Disorder', 3, 0)">Never</button>
-                <button class="response-button" onclick="selectResponse('Eating Disorder', 3, 1)">Rarely</button>
-                <button class="response-button" onclick="selectResponse('Eating Disorder', 3, 2)">Occasionally</button>
-                <button class="response-button" onclick="selectResponse('Eating Disorder', 3, 3)">Frequently</button>
-                <button class="response-button" onclick="selectResponse('Eating Disorder', 3, 4)">Very Frequently</button>
-            </div>
+            <label for="question3">3. Engaging in compensatory behaviors such as vomiting or excessive exercise.</label>
+            <select class="response-dropdown" id="question3" onchange="selectResponse('Eating Disorder', 3, this.value)">
+                <option value="0">Never</option>
+                <option value="1">Rarely</option>
+                <option value="2">Occasionally</option>
+                <option value="3">Frequently</option>
+                <option value="4">Very Frequently</option>
+            </select>
         </div>
-      
+        
         <div class="question">
-            4. Distorted body image or dissatisfaction with body weight or shape.
-            <div>
-                <button class="response-button" onclick="selectResponse('Eating Disorder', 4, 0)">Never</button>
-                <button class="response-button" onclick="selectResponse('Eating Disorder', 4, 1)">Rarely</button>
-                <button class="response-button" onclick="selectResponse('Eating Disorder', 4, 2)">Occasionally</button>
-                <button class="response-button" onclick="selectResponse('Eating Disorder', 4, 3)">Frequently</button>
-                <button class="response-button" onclick="selectResponse('Eating Disorder', 4, 4)">Very Frequently</button>
-            </div>
+            <label for="question4">4. Distorted body image or dissatisfaction with body weight or shape.</label>
+            <select class="response-dropdown" id="question4" onchange="selectResponse('Eating Disorder', 4, this.value)">
+                <option value="0">Never</option>
+                <option value="1">Rarely</option>
+                <option value="2">Occasionally</option>
+                <option value="3">Frequently</option>
+                <option value="4">Very Frequently</option>
+            </select>
         </div>
-      
+        
         <div class="question">
-            5. Feeling out of control during episodes of eating.
-            <div>
-                <button class="response-button" onclick="selectResponse('Eating Disorder', 5, 0)">Never</button>
-                <button class="response-button" onclick="selectResponse('Eating Disorder', 5, 1)">Rarely</button>
-                <button class="response-button" onclick="selectResponse('Eating Disorder', 5, 2)">Occasionally</button>
-                <button class="response-button" onclick="selectResponse('Eating Disorder', 5, 3)">Frequently</button>
-                <button class="response-button" onclick="selectResponse('Eating Disorder', 5, 4)">Very Frequently</button>
-            </div>
+            <label for="question5">5. Feeling out of control during episodes of eating.</label>
+            <select class="response-dropdown" id="question5" onchange="selectResponse('Eating Disorder', 5, this.value)">
+                <option value="0">Never</option>
+                <option value="1">Rarely</option>
+                <option value="2">Occasionally</option>
+                <option value="3">Frequently</option>
+                <option value="4">Very Frequently</option>
+            </select>
         </div>
+    
         <div class="question">
-            6. Feeling guilty or ashamed about eating habits.
-            <div>
-                <button class="response-button" onclick="selectResponse('Eating Disorder', 6, 0)">Never</button>
-                <button class="response-button" onclick="selectResponse('Eating Disorder', 6, 1)">Rarely</button>
-                <button class="response-button" onclick="selectResponse('Eating Disorder', 6, 2)">Occasionally</button>
-                <button class="response-button" onclick="selectResponse('Eating Disorder', 6, 3)">Frequently</button>
-                <button class="response-button" onclick="selectResponse('Eating Disorder', 6, 4)">Very Frequently</button>
-            </div>
+            <label for="question6">6. Feeling guilty or ashamed about eating habits.</label>
+            <select class="response-dropdown" id="question6" onchange="selectResponse('Eating Disorder', 6, this.value)">
+                <option value="0">Never</option>
+                <option value="1">Rarely</option>
+                <option value="2">Occasionally</option>
+                <option value="3">Frequently</option>
+                <option value="4">Very Frequently</option>
+            </select>
         </div>
-      
+    
         <div class="question">
-            7. Feeling out of control while eating.
-            <div>
-                <button class="response-button" onclick="selectResponse('Eating Disorder', 7, 0)">Never</button>
-                <button class="response-button" onclick="selectResponse('Eating Disorder', 7, 1)">Rarely</button>
-                <button class="response-button" onclick="selectResponse('Eating Disorder', 7, 2)">Occasionally</button>
-                <button class="response-button" onclick="selectResponse('Eating Disorder', 7, 3)">Frequently</button>
-                <button class="response-button" onclick="selectResponse('Eating Disorder', 7, 4)">Very Frequently</button>
-            </div>
+            <label for="question7">7. Feeling out of control while eating.</label>
+            <select class="response-dropdown" id="question7" onchange="selectResponse('Eating Disorder', 7, this.value)">
+                <option value="0">Never</option>
+                <option value="1">Rarely</option>
+                <option value="2">Occasionally</option>
+                <option value="3">Frequently</option>
+                <option value="4">Very Frequently</option>
+            </select>
         </div>
-      
+    
         <div class="question">
-            8. Obsessive thoughts about food or body image.
-            <div>
-                <button class="response-button" onclick="selectResponse('Eating Disorder', 8, 0)">Never</button>
-                <button class="response-button" onclick="selectResponse('Eating Disorder', 8, 1)">Rarely</button>
-                <button class="response-button" onclick="selectResponse('Eating Disorder', 8, 2)">Occasionally</button>
-                <button class="response-button" onclick="selectResponse('Eating Disorder', 8, 3)">Frequently</button>
-                <button class="response-button" onclick="selectResponse('Eating Disorder', 8, 4)">Very Frequently</button>
-            </div>
+            <label for="question8">8. Obsessive thoughts about food or body image.</label>
+            <select class="response-dropdown" id="question8" onchange="selectResponse('Eating Disorder', 8, this.value)">
+                <option value="0">Never</option>
+                <option value="1">Rarely</option>
+                <option value="2">Occasionally</option>
+                <option value="3">Frequently</option>
+                <option value="4">Very Frequently</option>
+            </select>
         </div>
-      
+    
         <div class="question">
-            9. Isolation or avoidance of social situations involving food.
-            <div>
-                <button class="response-button" onclick="selectResponse('Eating Disorder', 9, 0)">Never</button>
-                <button class="response-button" onclick="selectResponse('Eating Disorder', 9, 1)">Rarely</button>
-                <button class="response-button" onclick="selectResponse('Eating Disorder', 9, 2)">Occasionally</button>
-                <button class="response-button" onclick="selectResponse('Eating Disorder', 9, 3)">Frequently</button>
-                <button class="response-button" onclick="selectResponse('Eating Disorder', 9, 4)">Very Frequently</button>
-            </div>
+            <label for="question9">9. Isolation or avoidance of social situations involving food.</label>
+            <select class="response-dropdown" id="question9" onchange="selectResponse('Eating Disorder', 9, this.value)">
+                <option value="0">Never</option>
+                <option value="1">Rarely</option>
+                <option value="2">Occasionally</option>
+                <option value="3">Frequently</option>
+                <option value="4">Very Frequently</option>
+            </select>
         </div>
-      
+    
         <div class="question">
-            10. Using food as a means to cope with emotions.
-            <div>
-                <button class="response-button" onclick="selectResponse('Eating Disorder', 10, 0)">Never</button>
-                <button class="response-button" onclick="selectResponse('Eating Disorder', 10, 1)">Rarely</button>
-                <button class="response-button" onclick="selectResponse('Eating Disorder', 10, 2)">Occasionally</button>
-                <button class="response-button" onclick="selectResponse('Eating Disorder', 10, 3)">Frequently</button>
-                <button class="response-button" onclick="selectResponse('Eating Disorder', 10, 4)">Very Frequently</button>
-            </div>
+            <label for="question10">10. Using food as a means to cope with emotions.</label>
+            <select class="response-dropdown" id="question10" onchange="selectResponse('Eating Disorder', 10, this.value)">
+                <option value="0">Never</option>
+                <option value="1">Rarely</option>
+                <option value="2">Occasionally</option>
+                <option value="3">Frequently</option>
+                <option value="4">Very Frequently</option>
+            </select>
         </div>
-      
         <button onclick="submitTest('Eating Disorder')">Submit</button>
     </div>
+    
 
     <footer class="footer mt-auto py-3">
         <div>
@@ -538,9 +545,9 @@
             'Eating Disorder': [0, 0, 0, 0, 0]
         };
     
-        function selectResponse(testType, questionIndex, responseIndex) {
-            responses[testType][questionIndex - 1] = responseIndex;
-        }
+        function selectResponse(testType, questionIndex, selectedValue) {
+    responses[testType][questionIndex - 1] = parseInt(selectedValue); 
+}
     
         function submitTest(testType) {
     const totalScore = responses[testType].reduce((acc, curr) => acc + curr, 0);
