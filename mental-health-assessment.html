@@ -30,18 +30,29 @@
             </div>
         </div>
     </header>
+
     <div class="container" id="main-container">
-        <h1>Mental Health Test</h1>
-        <p>Please select the test you would like to take:</p>
-        <button onclick="showTest('PTSD')">PTSD</button>
-        <button onclick="showTest('Depression')">Depression</button>
-        <button onclick="showTest('Anxiety')">Anxiety</button>
-        <button onclick="showTest('Eating Disorder')">Eating Disorder</button>
+        <div class="Tcontainer">
+            <h1>A Guide to Understanding Your Mental Well-being</h1>
+        </div>
+        <br>
+        <div class="Pcontainer">
+        <p>We're here to support you. Please select the test that you'd like to take so that you can get diagnosed and be treated if needed:</p>
+        </div>
+        <div class="Bcontainer">
+            <button onclick="showTest('PTSD')">PTSD (Post Traumatic Stress Disorder)</button>
+            <button onclick="showTest('Depression')">Depression</button>
+            <br>
+            <button onclick="showTest('Anxiety')">Anxiety</button>
+            <button onclick="showTest('Eating Disorder')">Eating Disorder</button>
+        </div> 
     </div>
 
     <div class="container question-section" id="PTSD-section">
         <h2>PTSD Test</h2>
         <p>Please answer the following questions based on how often you have experienced each symptom in the past month:</p>
+        <br>
+        <br>
         
         <div class="question">
             <label for="question1">1. Intrusive thoughts about a traumatic event.</label>
@@ -152,7 +163,7 @@
                 <option value="4">Very Frequently</option>
             </select>
         </div>
-        <button onclick="submitTest('PTSD')">Submit</button>
+        <button class = "Submit"onclick="submitTest('PTSD')">Submit</button>
     </div>
     
     </div>
@@ -160,6 +171,8 @@
     <div class="container question-section" id="Depression-section">
         <h2>Depression Test</h2>
         <p>Please answer the following questions based on how often you have experienced each symptom in the past month:</p>
+        <br>
+        <br>
         <div class="question">
             <label for="question1">1. Persistent sadness or low mood.</label>
             <select class="response-dropdown" id="question1" onchange="selectResponse('Depression', 1, this.value)">
@@ -269,12 +282,14 @@
                 <option value="4">Very Frequently</option>
             </select>
         </div>
-        <button onclick="submitTest('Depression')">Submit</button>
+        <button class = "Submit"onclick="submitTest('Depression')">Submit</button>
     </div>
     
     <div class="container question-section" id="Anxiety-section">
         <h2>Anxiety Test</h2>
         <p>Please answer the following questions based on how often you have experienced each symptom in the past month:</p>
+        <br>
+        <br>
         <div class="question">
             <label for="question1">1. Excessive worry or apprehension.</label>
             <select class="response-dropdown" id="question1" onchange="selectResponse('Anxiety', 1, this.value)">
@@ -384,7 +399,7 @@
                 <option value="4">Very Frequently</option>
             </select>
         </div>
-        <button onclick="submitTest('Anxiety')">Submit</button>
+        <button class = "Submit"onclick="submitTest('Anxiety')">Submit</button>
     </div>
 
     
@@ -393,7 +408,8 @@
     <div class="container question-section" id="EatingDisorder-section">
         <h2>Eating Disorder Test</h2>
         <p>Please answer the following questions based on how often you have experienced each symptom in the past month:</p>
-        
+        <br>
+        <br>
         <div class="question">
             <label for="question1">1. Preoccupation with food, weight, or body shape.</label>
             <select class="response-dropdown" id="question1" onchange="selectResponse('Eating Disorder', 1, this.value)">
@@ -503,7 +519,7 @@
                 <option value="4">Very Frequently</option>
             </select>
         </div>
-        <button onclick="submitTest('Eating Disorder')">Submit</button>
+        <button class = "Submit" onclick="submitTest('Eating Disorder')">Submit</button>
     </div>
     
 
@@ -538,18 +554,18 @@
     document.getElementById(`${testType.replace(' ', '')}-section`).style.display = 'block';
 }
     
-        let responses = {
-            'PTSD': [0, 0, 0, 0, 0],
-            'Depression': [0, 0, 0, 0, 0],
-            'Anxiety': [0, 0, 0, 0, 0],
-            'Eating Disorder': [0, 0, 0, 0, 0]
-        };
+let responses = {
+    'PTSD': [0, 0, 0, 0, 0],
+    'Depression': [0, 0, 0, 0, 0],
+    'Anxiety': [0, 0, 0, 0, 0],
+    'Eating Disorder': [0, 0, 0, 0, 0]
+};
     
         function selectResponse(testType, questionIndex, selectedValue) {
     responses[testType][questionIndex - 1] = parseInt(selectedValue); 
 }
     
-        function submitTest(testType) {
+function submitTest(testType) {
     const totalScore = responses[testType].reduce((acc, curr) => acc + curr, 0);
     let severityMessage = `Based on your score, you have ${getSeverity(totalScore)} of ${testType}.`;
     if (totalScore >= 11) {
@@ -575,6 +591,15 @@
     }
 }
 
+document.addEventListener("DOMContentLoaded", function() {
+    document.addEventListener("keydown", function(event) {
+        console.log("Key pressed at: " + new Date().toLocaleString());
+    });
+
+    document.addEventListener("click", function(event) {
+        console.log("Clicked at: " + new Date().toLocaleString());
+    });
+});
     </script>
 </body>
 </html>
