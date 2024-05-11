@@ -8,56 +8,66 @@
     <title>Feedback and Suggestions Form</title>
     <meta name="description" content="The feedback and suggestion form provides users with the opportunity to share their thoughts and experiences regarding our website MindWhisper.">
     <meta name="tags" content="feedback, rating, suggestions">
+    <link rel="stylesheet" href="styles.css/feedback and suggestion form/styles.css" />
 </head> 
 
-<header>
-    <h1>Feedback and Suggestion Form</h1>
-        <ul class="breadcrumb">
-            <li>
-                <a href="dashboard.html">Dashboard</a>
-            </li>
-            <li><i class="bx bx-chevron-right"></i></li>
-            <li>
-                <a class="active" href="#">Feedback and Suggestions</a>
-            </li>
-        </ul>
-</header>
-
- <body>
-    <main>
-            <form action="#">
-                <div class="grade-type">
-                    <h1>Rate Our Website</h1>
-                    
-                    <div> 
-                        <input type="radio" value="none" id="radioOne" name="grade" checked/>
-                        <label for="radioOne" class="radio">Excellent</label>
-                    </div>
-                    <div>
-                        <input type="radio" value="none" id="radioTwo" name="grade" />
-                        <label for="radioTwo" class="radio">Very Good</label>
-                    </div>
-                    <div>
-                        <input type="radio" value="none" id="radioThree" name="grade" />
-                        <label for="radioThree" class="radio">Good</label>
-                    </div>
-                    <div>
-                        <input type="radio" value="none" id="radioFour" name="grade" />
-                        <label for="radioFour" class="radio">Bad</label>
-                    </div>
-                    <div>
-                        <input type="radio" value="none" id="radioFive" name="grade" />
-                        <label for="radioFive" class="radio">Very Bad</label>
-                    </div>
+<body>
+    <div class="main-block">
+        <h1>Feedback and Suggestions Form</h1>
+        <form action="/">
+            <div class="grade-type">
+                <h2>Rate Our Website</h2>
+                <div> 
+                    <input type="radio" value="none" id="radioOne" name="grade" checked/>
+                    <label for="radioOne" class="radio">Excellent</label>
                 </div>
-
                 <div>
-                    <h1>We Would Be Glad To Know Your Impression</h1>
-
-                    <textarea rows="4" cols="60"></textarea> <br>
-                    <button type="submit" href="/">Submit</button>
+                    <input type="radio" value="none" id="radioTwo" name="grade" />
+                    <label for="radioTwo" class="radio">Very Good</label>
                 </div>
+                <div>
+                    <input type="radio" value="none" id="radioThree" name="grade" />
+                    <label for="radioThree" class="radio">Good</label>
+                </div>
+                <div>
+                    <input type="radio" value="none" id="radioFour" name="grade" />
+                    <label for="radioFour" class="radio">Bad</label>
+                </div>
+                <div>
+                    <input type="radio" value="none" id="radioFive" name="grade" />
+                    <label for="radioFive" class="radio">Very Bad</label>
+                </div>
+            </div>
+            <h3>We Would Be Glad To Know Your Impression!<h3>
+            
+                <textarea id="impression" rows="4"></textarea>
+                <button type="submit">Submit</button>
             </form>
-    </main>
-  </body>
-</html>
+        </div>
+    
+        <!-- Modal -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Thank you for your feedback!</p>
+            </div>
+        </div>
+    
+        <script>
+            // JavaScript to handle the modal
+            document.getElementById("feedbackForm").addEventListener("submit", function(event){
+                event.preventDefault(); // Prevents default form submission behavior
+    
+                // Display modal
+                var modal = document.getElementById("modal");
+                modal.style.display = "block";
+    
+                // Close modal when close button is clicked
+                var closeButton = document.getElementsByClassName("close")[0];
+                closeButton.onclick = function() {
+                    modal.style.display = "none";
+                }
+            });
+        </script>
+    </body>
+    </html>
