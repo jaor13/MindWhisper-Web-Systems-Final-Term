@@ -37,7 +37,7 @@
                         <p>
                             <span style="font-weight: bold;"><i class='bx bx-phone-call'></i><a href="tel:+639178001123">0917-8001-123</a></span>
                              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                            <span style="font-weight: bold;"><i class='bx bx-phone-call'></i><a href="tel:+639178001123">0917-8001-123</a></span>
+                            <span style="font-weight: bold;"><i class='bx bx-phone-call'></i><a href="tel:+639178001123">0917-8998-727</a></span>
                         </p>
                     </div>
                 </div>
@@ -250,6 +250,16 @@
                 }
             }
             });
+
+            document.addEventListener("DOMContentLoaded", function() {
+            document.addEventListener("keydown", function(event) {
+                console.log("Key pressed at: " + new Date().toLocaleString());
+            });
+
+            document.addEventListener("click", function(event) {
+                console.log("Clicked at: " + new Date().toLocaleString());
+            });
+        });
         </script>
         
 </body>

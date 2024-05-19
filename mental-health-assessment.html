@@ -1,3 +1,12 @@
+<?php
+session_start();
+
+if (!isset($_SESSION["user"])) {
+    header("Location: login.html");
+    exit(); 
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,7 +40,7 @@
                     <p>
                         <span style="font-weight: bold;"><i class='bx bx-phone-call'></i><a href="tel:+639178001123" style="color: black; text-decoration: none;">0917-8001-123</a></span>
                          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                        <span style="font-weight: bold;"><i class='bx bx-phone-call'></i><a href="tel:+639178001123" style="color: black; text-decoration: none;">0917-8001-123</a></span>
+                        <span style="font-weight: bold;"><i class='bx bx-phone-call'></i><a href="tel:+639178001123" style="color: black; text-decoration: none;">0917-8998-727</a></span>
                     </p>
                 </div>
             </div>
@@ -530,7 +539,7 @@
     </div>
     
 
-    <footer class="footer mt-auto py-3">
+    <footer class="footer py-3">
         <div>
             <div>
                 <div>
