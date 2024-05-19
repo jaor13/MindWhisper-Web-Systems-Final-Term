@@ -28,18 +28,6 @@
     padding: 10px 30px 30px 30px;
 }
 
-.form.signup {
-    display: none;
-}
-
-.forms.show-signup .form.signup {
-    display: block;
-}
-
-.forms.show-signup .form.login {
-    display: none;
-}
-
 header img {
     width: 120px;
     height: 120px;
