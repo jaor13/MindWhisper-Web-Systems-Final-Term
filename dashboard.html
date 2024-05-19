@@ -1,3 +1,24 @@
+<?php
+	session_start();
+
+	if (!isset($_SESSION["user"])) {
+		header("Location: login.html");
+		exit(); 
+	}
+
+	$email = $_SESSION["user"];
+	require_once 'connect.php';
+
+	$sql = "SELECT full_name FROM users_db WHERE email = '$email'";
+	$result = mysqli_query($conn, $sql);
+
+	if ($result) {
+		$row = mysqli_fetch_assoc($result);
+		$fullName = $row['full_name'];
+	} else {
+		$fullName = "User";
+	}
+?>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -23,8 +44,8 @@
 					<input type="file" id="profile-picture-input" accept="image/*" onchange="previewProfilePicture(event)" style="display: none;">
 				</label>
 				<div class="profile-details">
-					<h1 class="username">Lua Guang</h1>
-					<p class="email">luaguang13@serv.com</p>
+					<h1 class="username"><?php echo $fullName?></h1>
+					<p class="email"><?php echo  $email ?></p>
 				</div>
 			</div>
 			<ul class="side-menu">
@@ -77,7 +98,7 @@
 					</div>
 				</header>
 				<div class="welcome-message">
-					<h2>Welcome, User!</h2>
+				<h2>Welcome, <?php echo $fullName?>!</h2>
 					<div class="welcome-content">
 						<p>Explore our dashboard packed with tools and resources tailored to support your mental well-being. Dive in and discover a range of services, all available for you to try out, completely free of charge. Your journey to better mental health starts here!</p>
 					</div>
@@ -184,26 +205,26 @@
 			window.onload = displayRandomMessages;
 
 			function previewProfilePicture(event) {
-            const input = event.target;
-            if (input.files && input.files[0]) {
-                const reader = new FileReader();
-                reader.onload = function(e) {
-                    const previewImage = document.getElementById('current-profile-pic');
-                    previewImage.src = e.target.result;
-                }
-                reader.readAsDataURL(input.files[0]);
-            }
-        }
+				const input = event.target;
+				if (input.files && input.files[0]) {
+					const reader = new FileReader();
+					reader.onload = function(e) {
+						const previewImage = document.getElementById('current-profile-pic');
+						previewImage.src = e.target.result;
+					}
+					reader.readAsDataURL(input.files[0]);
+				}
+        	}
 
 			document.addEventListener("DOMContentLoaded", function() {
-			document.addEventListener("keydown", function(event) {
-				console.log("Key pressed at: " + new Date().toLocaleString());
-			});
+				document.addEventListener("keydown", function(event) {
+					console.log("Key pressed at: " + new Date().toLocaleString());
+				});
 
-			document.addEventListener("click", function(event) {
-				console.log("Clicked at: " + new Date().toLocaleString());
+				document.addEventListener("click", function(event) {
+					console.log("Clicked at: " + new Date().toLocaleString());
+				});
 			});
-		});
 		</script>
 
 	</body>

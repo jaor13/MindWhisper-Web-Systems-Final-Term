@@ -1,3 +1,8 @@
+<?php
+    session_start();
+    session_destroy();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -52,7 +57,7 @@
                             </ul>
                         </div>
                         <div class="col-lg-3 col-sm-12 justify-content-center text-center">
-                            <button class="btn" onclick="window.location.href='login-signup.html';">Create an Account</button>
+                            <button class="btn" onclick="window.location.href='signup.html';">Create an Account</button>
                         </div>
                     </div>
                 </div>
@@ -68,7 +73,7 @@
                         <div class="slider-captions">
                             <h1 class="slider-title">Feeling stressed or anxious?</h1>
                             <p class="slider-text">Talk to a professional through crisis hotlines for immediate assistance. Remember, reaching out for help is a courageous step towards feeling better.</p>
-                            <a href="login-signup.html" class="btn">View Hotlines</a>
+                            <a href="dashboard.html" class="btn">View Hotlines</a>
                         </div>
                     </div>
                 </div>
@@ -78,7 +83,7 @@
                         <div class="slider-captions">
                             <h1 class="slider-title">It's time for better help.</h1>
                             <p class="slider-text">If you're ready to seek professional assistance, you're in the right place. Take the first step towards improved mental health today.</p>
-                            <a href="login-signup.html" class="btn">View Health Organizations</a>
+                            <a href="dashboard.html" class="btn">View Health Organizations</a>
                         </div>
                     </div>
                 </div>
@@ -88,7 +93,7 @@
                         <div class="slider-captions">
                             <h1 class="slider-title">Pressure is on?</h1>
                             <p class="slider-text">Dive into some recommended applications and tools aimed at supporting your mental health.</p>
-                            <a href="login-signup.html" class="btn">View App Recommendations</a>
+                            <a href="dashboard.html" class="btn">View App Recommendations</a>
                         </div>
                     </div>
                 </div>
@@ -207,53 +212,45 @@
             </div>
         </footer>
         
+        
         <script>
             document.addEventListener("DOMContentLoaded", function() {
-                let noOfCharac = 300;
-                let blogSingles = document.querySelectorAll(".blog-single");
+            let noOfCharac = 300;
+            let blogSingles = document.querySelectorAll(".blog-single");
 
-                blogSingles.forEach((blogSingle, index) => {
-                    let serviceContent = blogSingle.querySelector(".service-content");
-                    let originalContent = serviceContent.innerHTML.trim(); 
+            blogSingles.forEach((blogSingle, index) => {
+                let serviceContent = blogSingle.querySelector(".service-content");
+                let originalContent = serviceContent.innerHTML.trim(); 
 
-                    let limitedContent = originalContent.substring(0, noOfCharac);
-                    serviceContent.innerHTML = limitedContent;
+                let limitedContent = originalContent.substring(0, noOfCharac);
+                serviceContent.innerHTML = limitedContent;
 
-                    let hiddenContent = originalContent.substring(noOfCharac);
-                    let moreText = document.createElement("span");
-                    moreText.innerHTML = hiddenContent;
-                    moreText.classList.add("more", "hide");
-                    serviceContent.appendChild(moreText);
+                let hiddenContent = originalContent.substring(noOfCharac);
+                let moreText = document.createElement("span");
+                moreText.innerHTML = hiddenContent;
+                moreText.classList.add("more", "hide");
+                serviceContent.appendChild(moreText);
 
-                    blogSingle.querySelector(".readbtn").addEventListener("click", function() {
-                        toggleContent(index);
-                    });
+                blogSingle.querySelector(".readbtn").addEventListener("click", function() {
+                    toggleContent(index);
                 });
-
-                function toggleContent(index) {
-                    let blogSingle = document.querySelector(`.blog-single[data-index="${index}"]`);
-                    let moreText = blogSingle.querySelector(".more");
-                    let btn = blogSingle.querySelector(".readbtn");
-
-                    if (moreText.classList.contains("hide")) {
-                        moreText.classList.remove("hide");
-                        btn.textContent = "Read Less";
-                    } else {
-                        moreText.classList.add("hide");
-                        btn.textContent = "Read More";
-                    }
-                }
             });
 
-            document.addEventListener("DOMContentLoaded", function() {
-                document.addEventListener("keydown", function(event) {
-                    console.log("Key pressed at: " + new Date().toLocaleString());
-                });
+            function toggleContent(index) {
+                let blogSingle = document.querySelector(`.blog-single[data-index="${index}"]`);
+                let moreText = blogSingle.querySelector(".more");
+                let btn = blogSingle.querySelector(".readbtn");
 
-                document.addEventListener("click", function(event) {
-                    console.log("Clicked at: " + new Date().toLocaleString());
-                });
+                if (moreText.classList.contains("hide")) {
+                    moreText.classList.remove("hide");
+                    btn.textContent = "Read Less";
+                } else {
+                    moreText.classList.add("hide");
+                    btn.textContent = "Read More";
+                }
+            }
             });
         </script>
+        
 </body>
 </html>
