@@ -1,7 +1,7 @@
 <?php
     session_start();
     if(isset($_SESSION["user"])){
-        header("Location: dashboard.html");
+        header("Location: dashboard.php");
         exit(); 
     }
 ?>
@@ -87,7 +87,7 @@
                             }               
                         ?>
 
-                        <form action="signup.html" method="post">
+                        <form action="signup.php" method="post">
                             <div class="form-group">
                                 <label for="full-name">Full Name</label>
                                 <input type="text" class="form-control" name="full-name" id="full-name" required placeholder="Enter your full name">
@@ -115,7 +115,7 @@
                             </div>
                         </form>
                         <div class="form-group text-center" style="font-size: small;">
-                            <span>Already have an account? <a href="login.html" class="login-link">Login</a></span>
+                            <span>Already have an account? <a href="login.php" class="login-link">Login</a></span>
                         </div>
                     </div>
                     <div class="media-options" style="padding: 5px 30px 3px 30px;">

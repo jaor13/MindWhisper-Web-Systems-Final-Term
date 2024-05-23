@@ -2,7 +2,7 @@
     session_start();
 
     if(isset($_SESSION["user"])){
-        header("Location: dashboard.html");
+        header("Location: dashboard.php");
     }
 ?>
 <!DOCTYPE html>
@@ -46,7 +46,7 @@
                                 if (password_verify($password, $user['password'])) {
                                     session_start();
                                     $_SESSION["user"] = $user['email']; // Store the email in the session
-                                    header("Location: dashboard.html");
+                                    header("Location: dashboard.php");
                                     die();
                                 } else {
                                     echo '<div class="alert alert-danger">Password is incorrect</div>';
@@ -57,7 +57,7 @@
                         }
                     ?>
 
-                    <form action="login.html" method="post">
+                    <form action="login.php" method="post">
                         <div class="form-group">
                             <input type="email" name="email" class="form-control" id="email" placeholder="Enter your email" required>
                         </div>
@@ -73,7 +73,7 @@
                         </div>
                     </form>
                     <div class="form-group text-center" style="font-size: small;">
-                        <span>Don't have an account? <a href="signup.html" class="signup-link">Sign-up</a></span>
+                        <span>Don't have an account? <a href="signup.php" class="signup-link">Sign-up</a></span>
                     </div>
                 </div>
                 <div class="media-options" style="padding: 5px 30px 3px 30px;">

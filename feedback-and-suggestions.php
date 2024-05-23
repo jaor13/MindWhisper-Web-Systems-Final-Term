@@ -2,7 +2,7 @@
 session_start();
 
 if (!isset($_SESSION["user"])) {
-    header("Location: login.html");
+    header("Location: login.php");
     exit(); 
 }
 ?>
@@ -85,7 +85,7 @@ if (!isset($_SESSION["user"])) {
             closeButton.onclick = function() {
                 var modal = document.getElementById("modal");
                 modal.style.display = "none";
-                window.location.href = "index.html"; 
+                window.location.href = "index.php"; 
             };
         </script>
 </body>

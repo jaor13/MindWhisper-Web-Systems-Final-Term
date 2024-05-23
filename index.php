@@ -51,13 +51,13 @@
                         <div id="menu" class="col-lg-5 col-sm-12 justify-content-end">
                             <ul class="menu-list">
                                 <li><a href="#">Home</a></li>
-                                <li><a href="about-us.html">About</a></li>
+                                <li><a href="about-us.php">About</a></li>
                                 <li><a href="#our-blog">Our Services</a></li>
                                 <li><a href="#footer">Contact Us</a></li>
                             </ul>
                         </div>
                         <div class="col-lg-3 col-sm-12 justify-content-center text-center">
-                            <button class="btn" onclick="window.location.href='signup.html';">Create an Account</button>
+                            <button class="btn" onclick="window.location.href='signup.php';">Create an Account</button>
                         </div>
                     </div>
                 </div>
@@ -73,7 +73,7 @@
                         <div class="slider-captions">
                             <h1 class="slider-title">Feeling stressed or anxious?</h1>
                             <p class="slider-text">Talk to a professional through crisis hotlines for immediate assistance. Remember, reaching out for help is a courageous step towards feeling better.</p>
-                            <a href="dashboard.html" class="btn">View Hotlines</a>
+                            <a href="dashboard.php" class="btn">View Hotlines</a>
                         </div>
                     </div>
                 </div>
@@ -83,7 +83,7 @@
                         <div class="slider-captions">
                             <h1 class="slider-title">It's time for better help.</h1>
                             <p class="slider-text">If you're ready to seek professional assistance, you're in the right place. Take the first step towards improved mental health today.</p>
-                            <a href="dashboard.html" class="btn">View Health Organizations</a>
+                            <a href="dashboard.php" class="btn">View Health Organizations</a>
                         </div>
                     </div>
                 </div>
@@ -93,7 +93,7 @@
                         <div class="slider-captions">
                             <h1 class="slider-title">Pressure is on?</h1>
                             <p class="slider-text">Dive into some recommended applications and tools aimed at supporting your mental health.</p>
-                            <a href="dashboard.html" class="btn">View App Recommendations</a>
+                            <a href="dashboard.php" class="btn">View App Recommendations</a>
                         </div>
                     </div>
                 </div>

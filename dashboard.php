@@ -2,7 +2,7 @@
 	session_start();
 
 	if (!isset($_SESSION["user"])) {
-		header("Location: login.html");
+		header("Location: login.php");
 		exit(); 
 	}
 
@@ -50,19 +50,19 @@
 			</div>
 			<ul class="side-menu">
 				<li>
-					<a href="index.html" class="acc-info">
+					<a href="index.php" class="acc-info">
 						<i class='bx bxs-user-rectangle'></i>
 						<span class="text">Account Information</span>
 					</a>
 				</li>
 				<li>
-					<a href="index.html" class="info">
+					<a href="index.php" class="info">
 						<i class='bx bxs-info-circle'></i>
 						<span class="text">Website Details</span>
 					</a>
 				</li>
 				<li>
-					<a href="index.html" class="logout">
+					<a href="index.php" class="logout">
 						<i class='bx bxs-log-out-circle'></i>
 						<span class="text">Logout</span>
 					</a>
@@ -122,37 +122,37 @@
 					<h2>Our Services</h2>
 					<div class="service-container">
 						<div class="service-card">
-							<a href="supportcare-directory.html">
+							<a href="supportcare-directory.php">
 								<img src="assets/images/dashboard/mental-health (1).png" alt="SupportCare Directory">
 								<h3>SupportCare Directory</h3>
 							</a>
 						</div>
 						<div class="service-card">
-							<a href="mental-health-assessment.html">
+							<a href="mental-health-assessment.php">
 								<img src="assets/images/dashboard/online-survey.png" alt="Mental Health Test">
 								<h3>Mental Health Test</h3>
 							</a>
 						</div>
 						<div class="service-card">
-							<a href="resource-library.html">
+							<a href="resource-library.php">
 								<img src="assets/images/dashboard/book.png" alt="Resource Library">
 								<h3>Resource Library</h3>
 							</a>
 						</div>
 						<div class="service-card">
-							<a href="suicide-&-crisis-hotline.html">
+							<a href="suicide-&-crisis-hotline.php">
 								<img src="assets/images/dashboard/24-hours-support.png" alt="Suicide & Crisis Hotlines">
 								<h3>Suicide & Crisis Hotlines</h3>
 							</a>
 						</div>
 						<div class="service-card">
-							<a href="therapeutic-tools-and-apps.html">
+							<a href="therapeutic-tools-and-apps.php">
 								<img src="assets/images/dashboard/smartphone (1).png" alt="Therapeutic Tools and Apps">
 								<h3>Therapeutic Tools and Apps</h3>
 							</a>
 						</div>
 						<div  class="service-card">
-							<a href="feedback-and-suggestions.html">
+							<a href="feedback-and-suggestions.php">
 								<img src="assets/images/dashboard/customer-rating.png" alt="Feedback and Suggestion">
 								<h3>Feedback and Suggestion</h3>
 							</a>
